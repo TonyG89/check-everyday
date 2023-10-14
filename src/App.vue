@@ -1,20 +1,30 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="container">
+    <div>
+      <h1 class="bg-red-900 mb-10">Hello! What do you want to check?</h1>
+      <van-button plain type="danger" loading-type="spinner"><h3 class="text-2xl">refresh all datas</h3></van-button>
+      <WeatherView />
+      <NBUView />
+      <CryptoCoinView />
+      <MyIpView />
+    </div>
+    <div>
+      <CalendarView />
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
+<script setup>
+import WeatherView from './components/WeatherView.vue';
+import MyIpView from './components/MyIpView.vue';
+// import CryptoCoinView from './components/CryptoCoinView.vue';
+import CalendarView from './components/CalendarView.vue';
+import NBUView from './components/NBUView.vue';
+const env = import.meta.env;
+console.log(env);
+</script>
+
+<style>
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -26,5 +36,8 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+h2 {
+  margin-top: 2rem;
 }
 </style>
