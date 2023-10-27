@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/composables/use-visibility-change.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { inBrowser } from \"../utils/index.mjs\";\nimport { onDeactivated, onBeforeUnmount } from \"vue\";\nimport { onMountedOrActivated } from \"@vant/use\";\nfunction useVisibilityChange(target, onChange) {\n  if (!inBrowser || !window.IntersectionObserver) {\n    return;\n  }\n  const observer = new IntersectionObserver(\n    (entries) => {\n      onChange(entries[0].intersectionRatio > 0);\n    },\n    { root: document.body }\n  );\n  const observe = () => {\n    if (target.value) {\n      observer.observe(target.value);\n    }\n  };\n  const unobserve = () => {\n    if (target.value) {\n      observer.unobserve(target.value);\n    }\n  };\n  onDeactivated(unobserve);\n  onBeforeUnmount(unobserve);\n  onMountedOrActivated(observe);\n}\nexport {\n  useVisibilityChange\n};\n",
+      "start": 1698392050852,
+      "end": 1698392050899,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050899,
+      "end": 1698392050899,
+      "order": "normal"
+    }
+  ]
+}

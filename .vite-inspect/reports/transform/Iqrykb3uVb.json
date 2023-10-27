@@ -1,0 +1,131 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=fd601f07&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\nroot {\r\n  // --van-calendar-day-margin-bottom: 400px;  // 4px\r\n}\r\n",
+      "start": 1698392048687,
+      "end": 1698392048687
+    },
+    {
+      "name": "vite:css",
+      "result": "",
+      "start": 1698392048687,
+      "end": 1698392048697,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392048697,
+      "end": 1698392048697,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392048697,
+      "end": 1698392048697,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392048697,
+      "end": 1698392048697,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "",
+      "start": 1698392048697,
+      "end": 1698392048700,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392048700,
+      "end": 1698392048700,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1698392048700,
+      "end": 1698392048700,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392048700,
+      "end": 1698392048700,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392048700,
+      "end": 1698392048700,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392048700,
+      "end": 1698392048700,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392048701,
+      "end": 1698392048701,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392048701,
+      "end": 1698392048701,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392048701,
+      "end": 1698392048701,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */export default ''",
+      "start": 1698392048701,
+      "end": 1698392048701,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=fd601f07&lang.scss"
+        ],
+        "sourcesContent": [
+          "export default ''"
+        ],
+        "names": [],
+        "mappings": "sCAAA"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392048701,
+      "end": 1698392048701,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392048702,
+      "end": 1698392048702,
+      "order": "normal"
+    }
+  ]
+}

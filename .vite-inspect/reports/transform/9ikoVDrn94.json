@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/toast/lock-click.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "let lockCount = 0;\nfunction lockClick(lock) {\n  if (lock) {\n    if (!lockCount) {\n      document.body.classList.add(\"van-toast--unclickable\");\n    }\n    lockCount++;\n  } else if (lockCount) {\n    lockCount--;\n    if (!lockCount) {\n      document.body.classList.remove(\"van-toast--unclickable\");\n    }\n  }\n}\nexport {\n  lockClick\n};\n",
+      "start": 1698392050858,
+      "end": 1698392050918,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050918,
+      "end": 1698392050918,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050918,
+      "end": 1698392050918,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050918,
+      "end": 1698392050918,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050918,
+      "end": 1698392050918,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050918,
+      "end": 1698392050918,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050918,
+      "end": 1698392050918,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050919,
+      "end": 1698392050919,
+      "order": "normal"
+    }
+  ]
+}

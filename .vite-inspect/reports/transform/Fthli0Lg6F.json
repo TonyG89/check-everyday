@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/tabs/utils.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { raf, cancelRaf } from \"@vant/use\";\nimport { getScrollTop, setScrollTop } from \"../utils/index.mjs\";\nfunction scrollLeftTo(scroller, to, duration) {\n  let rafId;\n  let count = 0;\n  const from = scroller.scrollLeft;\n  const frames = duration === 0 ? 1 : Math.round(duration * 1e3 / 16);\n  function cancel() {\n    cancelRaf(rafId);\n  }\n  function animate() {\n    scroller.scrollLeft += (to - from) / frames;\n    if (++count < frames) {\n      rafId = raf(animate);\n    }\n  }\n  animate();\n  return cancel;\n}\nfunction scrollTopTo(scroller, to, duration, callback) {\n  let rafId;\n  let current = getScrollTop(scroller);\n  const isDown = current < to;\n  const frames = duration === 0 ? 1 : Math.round(duration * 1e3 / 16);\n  const step = (to - current) / frames;\n  function cancel() {\n    cancelRaf(rafId);\n  }\n  function animate() {\n    current += step;\n    if (isDown && current > to || !isDown && current < to) {\n      current = to;\n    }\n    setScrollTop(scroller, current);\n    if (isDown && current < to || !isDown && current > to) {\n      rafId = raf(animate);\n    } else if (callback) {\n      rafId = raf(callback);\n    }\n  }\n  animate();\n  return cancel;\n}\nexport {\n  scrollLeftTo,\n  scrollTopTo\n};\n",
+      "start": 1698392050853,
+      "end": 1698392050913,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050913,
+      "end": 1698392050913,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050913,
+      "end": 1698392050913,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050914,
+      "end": 1698392050914,
+      "order": "normal"
+    }
+  ]
+}

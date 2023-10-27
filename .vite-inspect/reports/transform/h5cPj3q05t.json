@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/composables/use-refs.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { ref, onBeforeUpdate } from \"vue\";\nfunction useRefs() {\n  const refs = ref([]);\n  const cache = [];\n  onBeforeUpdate(() => {\n    refs.value = [];\n  });\n  const setRefs = (index) => {\n    if (!cache[index]) {\n      cache[index] = (el) => {\n        refs.value[index] = el;\n      };\n    }\n    return cache[index];\n  };\n  return [refs, setRefs];\n}\nexport {\n  useRefs\n};\n",
+      "start": 1698392050799,
+      "end": 1698392050836,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050836,
+      "end": 1698392050836,
+      "order": "normal"
+    }
+  ]
+}

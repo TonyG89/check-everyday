@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/divider/Divider.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { createVNode as _createVNode } from \"vue\";\nimport { defineComponent } from \"vue\";\nimport { truthProp, makeStringProp, createNamespace } from \"../utils/index.mjs\";\nconst [name, bem] = createNamespace(\"divider\");\nconst dividerProps = {\n  dashed: Boolean,\n  hairline: truthProp,\n  vertical: Boolean,\n  contentPosition: makeStringProp(\"center\")\n};\nvar stdin_default = defineComponent({\n  name,\n  props: dividerProps,\n  setup(props, {\n    slots\n  }) {\n    return () => {\n      var _a;\n      return _createVNode(\"div\", {\n        \"role\": \"separator\",\n        \"class\": bem({\n          dashed: props.dashed,\n          hairline: props.hairline,\n          vertical: props.vertical,\n          [`content-${props.contentPosition}`]: !!slots.default && !props.vertical\n        })\n      }, [!props.vertical && ((_a = slots.default) == null ? void 0 : _a.call(slots))]);\n    };\n  }\n});\nexport {\n  stdin_default as default,\n  dividerProps\n};\n",
+      "start": 1698392050403,
+      "end": 1698392050493,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050493,
+      "end": 1698392050493,
+      "order": "normal"
+    }
+  ]
+}

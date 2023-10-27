@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vue-circle-flags/dist/hmong-11a334ef.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { defineComponent as d, ref as _, computed as l, onMounted as m, openBlock as i, createElementBlock as r, createElementVNode as t, toDisplayString as h, createCommentVNode as u, normalizeStyle as f } from \"vue\";\nconst v = [\"viewBox\"], k = [\"id\"], p = /* @__PURE__ */ t(\"circle\", {\n  cx: \"256\",\n  cy: \"256\",\n  r: \"256\",\n  fill: \"#fff\"\n}, null, -1), g = [\n  p\n], w = [\"mask\"], z = { key: 0 }, x = /* @__PURE__ */ t(\"path\", {\n  fill: \"#d80027\",\n  d: \"M0 0h512v512H0z\"\n}, null, -1), y = /* @__PURE__ */ t(\"path\", {\n  fill: \"#ffda44\",\n  d: \"M41 32 16 51 6 72l12 33-14 17 5 27 12-26 13 18-34 34 54 15-19-18 24-17 24 17-19 18 54-15-34-34 13-18 12 26 5-27-14-17 12-33-10-21-25-19 17 37-23 24 3-24-15-25-15 25 3 24-23-24 17-37zm394 0-25 19-10 21 12 33-14 17 5 27 12-26 13 18-34 34 54 15-19-18 24-17 24 17-19 18 54-15-34-34 13-18 12 26 5-27-14-17 12-33-10-21-25-19 17 37-23 24 3-24-15-25-15 25 3 24-23-24 17-37zM228.3 42v32l-27.7 16 27.7 16v32l27.7-16 27.7 16v-32l27.7-16-27.7-16V42L256 58l-27.7-16zM256 244a111 111 0 0 0-111 111 111 111 0 0 0 111 111 111 111 0 0 0 111-111 111 111 0 0 0-111-111zM41 322l-25 19-10 21 28 69-34 34 54 15-19-18 24-17 24 17-19 18 54-15-34-34 28-69-10-21-25-19 17 37-23 24 3-24-15-25-15 25 3 24-23-24 17-37zm394 0-25 19-10 21 28 69-34 34 54 15-19-18 24-17 24 17-19 18 54-15-34-34 28-69-10-21-25-19 17 37-23 24 3-24-15-25-15 25 3 24-23-24 17-37z\"\n}, null, -1), M = { fill: \"none\" }, W = [\"r\"], C = /* @__PURE__ */ d({\n  __name: \"hmong\",\n  props: {\n    flagName: {},\n    strokeColor: { default: \"#000\" },\n    strokeWidth: { default: 0 }\n  },\n  setup(c) {\n    const e = c, o = _(), s = l(() => 512 + 2 * e.strokeWidth), n = l(() => -e.strokeWidth), a = l(() => 256 + e.strokeWidth / 2);\n    return m(() => o.value = window.crypto.randomUUID()), ($, B) => (i(), r(\"svg\", {\n      xmlns: \"http://www.w3.org/2000/svg\",\n      class: \"svg-circle-flags\",\n      viewBox: `${n.value} ${n.value} ${s.value} ${s.value}`\n    }, [\n      t(\"mask\", {\n        id: `${o.value}`\n      }, g, 8, k),\n      t(\"g\", {\n        mask: `url(#${o.value})`\n      }, [\n        e.flagName ? (i(), r(\"title\", z, h(e.flagName), 1)) : u(\"\", !0),\n        x,\n        y\n      ], 8, w),\n      t(\"g\", M, [\n        t(\"circle\", {\n          cx: \"256\",\n          cy: \"256\",\n          r: a.value,\n          fill: \"none\",\n          style: f({ stroke: e.strokeColor, strokeWidth: e.strokeWidth })\n        }, null, 12, W)\n      ])\n    ], 8, v));\n  }\n});\nexport {\n  C as default\n};\n//# sourceMappingURL=hmong-11a334ef.js.map\n",
+      "start": 1698392049770,
+      "end": 1698392049807,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392049807,
+      "end": 1698392049807,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392049807,
+      "end": 1698392049808,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392049808,
+      "end": 1698392049808,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392049808,
+      "end": 1698392049808,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392049808,
+      "end": 1698392049808,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392049808,
+      "end": 1698392049808,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392049808,
+      "end": 1698392049808,
+      "order": "normal"
+    }
+  ]
+}

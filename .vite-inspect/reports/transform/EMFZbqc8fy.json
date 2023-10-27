@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/coupon/utils.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { padZero } from \"../utils/index.mjs\";\nfunction getDate(timeStamp) {\n  const date = new Date(timeStamp * 1e3);\n  return `${date.getFullYear()}.${padZero(date.getMonth() + 1)}.${padZero(\n    date.getDate()\n  )}`;\n}\nconst formatDiscount = (discount) => (discount / 10).toFixed(discount % 10 === 0 ? 0 : 1);\nconst formatAmount = (amount) => (amount / 100).toFixed(amount % 100 === 0 ? 0 : amount % 10 === 0 ? 1 : 2);\nexport {\n  formatAmount,\n  formatDiscount,\n  getDate\n};\n",
+      "start": 1698392050811,
+      "end": 1698392050853,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050853,
+      "end": 1698392050853,
+      "order": "normal"
+    }
+  ]
+}

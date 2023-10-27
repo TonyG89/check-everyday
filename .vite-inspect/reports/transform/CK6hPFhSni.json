@@ -1,0 +1,124 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div>\r\n<h2>crypto</h2>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\n\r\n</style>",
+      "start": 1698392048052,
+      "end": 1698392048636,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392048636,
+      "end": 1698392048636,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392048636,
+      "end": 1698392048636,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392048636,
+      "end": 1698392048636,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392048636,
+      "end": 1698392048636,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", null, _hoisted_2))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1698392048636,
+      "end": 1698392048637,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392048637,
+      "end": 1698392048637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392048637,
+      "end": 1698392048637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392048637,
+      "end": 1698392048637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392048637,
+      "end": 1698392048637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392048637,
+      "end": 1698392048637,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392048637,
+      "end": 1698392048637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392048637,
+      "end": 1698392048638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392048638,
+      "end": 1698392048638,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", null, _hoisted_2))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1698392048638,
+      "end": 1698392048638,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue"
+        ],
+        "sourcesContent": [
+          "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", null, _hoisted_2))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])"
+        ],
+        "names": [],
+        "mappings": "sCAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392048638,
+      "end": 1698392048638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392048638,
+      "end": 1698392048638,
+      "order": "normal"
+    }
+  ]
+}

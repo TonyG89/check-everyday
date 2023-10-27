@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/cell-group/CellGroup.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { Fragment as _Fragment, createVNode as _createVNode, mergeProps as _mergeProps } from \"vue\";\nimport { defineComponent } from \"vue\";\nimport { truthProp, createNamespace, BORDER_TOP_BOTTOM } from \"../utils/index.mjs\";\nimport { useScopeId } from \"../composables/use-scope-id.mjs\";\nconst [name, bem] = createNamespace(\"cell-group\");\nconst cellGroupProps = {\n  title: String,\n  inset: Boolean,\n  border: truthProp\n};\nvar stdin_default = defineComponent({\n  name,\n  inheritAttrs: false,\n  props: cellGroupProps,\n  setup(props, {\n    slots,\n    attrs\n  }) {\n    const renderGroup = () => {\n      var _a;\n      return _createVNode(\"div\", _mergeProps({\n        \"class\": [bem({\n          inset: props.inset\n        }), {\n          [BORDER_TOP_BOTTOM]: props.border && !props.inset\n        }]\n      }, attrs, useScopeId()), [(_a = slots.default) == null ? void 0 : _a.call(slots)]);\n    };\n    const renderTitle = () => _createVNode(\"div\", {\n      \"class\": bem(\"title\", {\n        inset: props.inset\n      })\n    }, [slots.title ? slots.title() : props.title]);\n    return () => {\n      if (props.title || slots.title) {\n        return _createVNode(_Fragment, null, [renderTitle(), renderGroup()]);\n      }\n      return renderGroup();\n    };\n  }\n});\nexport {\n  cellGroupProps,\n  stdin_default as default\n};\n",
+      "start": 1698392050316,
+      "end": 1698392050437,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050437,
+      "end": 1698392050437,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/overlay/index.css",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": ":root{--van-overlay-z-index: 1;--van-overlay-background: rgba(0, 0, 0, .7)}.van-overlay{position:fixed;top:0;left:0;z-index:var(--van-overlay-z-index);width:100%;height:100%;background:var(--van-overlay-background)}\n",
+      "start": 1698392050230,
+      "end": 1698392050266,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "result": ":root{--van-overlay-z-index: 1;--van-overlay-background: rgba(0, 0, 0, .7)}.van-overlay{position:fixed;top:0;left:0;z-index:var(--van-overlay-z-index);width:100%;height:100%;background:var(--van-overlay-background)}\n",
+      "start": 1698392050266,
+      "end": 1698392050270,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050270,
+      "end": 1698392050270,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vue-circle-flags/dist/united_nations-36519e0c.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { defineComponent as d, ref as f, computed as c, onMounted as h, openBlock as r, createElementBlock as a, createElementVNode as l, toDisplayString as p, createCommentVNode as _, normalizeStyle as m, createStaticVNode as u } from \"vue\";\nconst v = [\"viewBox\"], k = [\"id\"], x = /* @__PURE__ */ l(\"circle\", {\n  cx: \"256\",\n  cy: \"256\",\n  r: \"256\",\n  fill: \"#fff\"\n}, null, -1), y = [\n  x\n], g = [\"mask\"], w = { key: 0 }, z = /* @__PURE__ */ u('<path fill=\"#338af3\" d=\"M0 0h512v512H0z\"></path><circle cx=\"256\" cy=\"256\" r=\"145\" fill=\"#eee\"></circle><circle cx=\"256\" cy=\"256\" r=\"111\" fill=\"#338af3\"></circle><path fill=\"#338af3\" d=\"M76 76h360L256 256z\"></path><circle cx=\"256\" cy=\"256\" r=\"89\" fill=\"#eee\"></circle><circle cx=\"256\" cy=\"256\" r=\"69\" fill=\"#338af3\"></circle><path fill=\"#eee\" d=\"M246 178h20v156h-20z\"></path><path fill=\"#eee\" d=\"M334 246v20H178v-20z\"></path><path fill=\"#eee\" d=\"m304 193.7 14.2 14.2-110.3 110.3-14.2-14.1z\"></path><path fill=\"#eee\" d=\"m318.2 304-14.1 14.2-110.4-110.3 14.2-14.2z\"></path><circle cx=\"256\" cy=\"256\" r=\"44\" fill=\"#eee\"></circle><circle cx=\"256\" cy=\"256\" r=\"22\" fill=\"#338af3\"></circle><ellipse cx=\"256\" cy=\"412\" fill=\"#eee\" rx=\"44\" ry=\"40\"></ellipse><path fill=\"#338af3\" d=\"m256 407-78 63h156z\"></path>', 14), N = { fill: \"none\" }, W = [\"r\"], S = /* @__PURE__ */ d({\n  __name: \"united_nations\",\n  props: {\n    flagName: {},\n    strokeColor: { default: \"#000\" },\n    strokeWidth: { default: 0 }\n  },\n  setup(s) {\n    const e = s, t = f(), i = c(() => 512 + 2 * e.strokeWidth), o = c(() => -e.strokeWidth), n = c(() => 256 + e.strokeWidth / 2);\n    return h(() => t.value = window.crypto.randomUUID()), ($, B) => (r(), a(\"svg\", {\n      xmlns: \"http://www.w3.org/2000/svg\",\n      class: \"svg-circle-flags\",\n      viewBox: `${o.value} ${o.value} ${i.value} ${i.value}`\n    }, [\n      l(\"mask\", {\n        id: `${t.value}`\n      }, y, 8, k),\n      l(\"g\", {\n        mask: `url(#${t.value})`\n      }, [\n        e.flagName ? (r(), a(\"title\", w, p(e.flagName), 1)) : _(\"\", !0),\n        z\n      ], 8, g),\n      l(\"g\", N, [\n        l(\"circle\", {\n          cx: \"256\",\n          cy: \"256\",\n          r: n.value,\n          fill: \"none\",\n          style: m({ stroke: e.strokeColor, strokeWidth: e.strokeWidth })\n        }, null, 12, W)\n      ])\n    ], 8, v));\n  }\n});\nexport {\n  S as default\n};\n//# sourceMappingURL=united_nations-36519e0c.js.map\n",
+      "start": 1698392050111,
+      "end": 1698392050188,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050188,
+      "end": 1698392050188,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050188,
+      "end": 1698392050189,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050189,
+      "end": 1698392050189,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050189,
+      "end": 1698392050189,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050189,
+      "end": 1698392050189,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050189,
+      "end": 1698392050189,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050189,
+      "end": 1698392050189,
+      "order": "normal"
+    }
+  ]
+}

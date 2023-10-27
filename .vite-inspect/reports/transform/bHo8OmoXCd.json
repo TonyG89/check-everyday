@@ -1,0 +1,126 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/src/components/NBUView.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <h2>NBU</h2>\r\n  <div>\r\n    {{ mainDb }}\r\n    <van-icon name=\"chat-o\" />\r\n    <ul>\r\n      x\r\n      <li v-for=\"i in NBUCurrency\" :key=\"i.currency\">\r\n        <CircleFlags size=\"medium\" :country=\"i.flag\" />\r\n        {{ i.price }} {{ grn }} | {{ i.invertPrice }} {{ i.symbol }}\r\n      </li>\r\n      x\r\n    </ul>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nimport { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\n\r\nconst grn = () => currencySymbol('ukr');\r\n\r\nconst now = useNow();\r\nconst formatDate = useDateFormat(now, 'YYYYMMDD');\r\n\r\nconst mainDb = reactive({});\r\n\r\nconst emit = defineEmits(['loadedData']);\r\n\r\nconst NBUCurrency = computed(() => {\r\n  return Object.keys(mainDb).map((currency) => {\r\n    return {\r\n      currency: currency,\r\n      price: Math.round(mainDb[currency] * 100) / 100,\r\n      invertPrice: Math.round((1 / mainDb[currency]) * 100) / 100,\r\n      symbol: () => currencySymbol('usd'),\r\n      flag: currency.toLowerCase().slice(0, 2),\r\n    };\r\n  });\r\n});\r\n\r\nconst loadData = async (currency, date = formatDate.value) => {\r\n  try {\r\n    const uri = `${import.meta.env.VITE_NBU_URL}/exchange?valcode=${currency}&date=${date}&json`;\r\n    const res = await fetch(uri);\r\n    const data = await res.json();\r\n    mainDb[currency] = data[0].rate;\r\n  } catch (error) {\r\n    console.error(error);\r\n    debugger;\r\n  } finally {\r\n    console.log('loaded data', date);\r\n  }\r\n};\r\n\r\nonMounted(() => {\r\n  loadData('EUR');\r\n  loadData('RUB');\r\n  loadData('BYN');\r\n  loadData('USD');\r\n  emit('loadedData', mainDb);\r\n  console.log(mainDb);\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\nli {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  padding: 10px 0;\r\n}\r\n</style>\r\n",
+      "start": 1698392048052,
+      "end": 1698392048655,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392048655,
+      "end": 1698392048655,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392048655,
+      "end": 1698392048655,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392048655,
+      "end": 1698392048655,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392048655,
+      "end": 1698392048655,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-bebe2ca2\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"NBU\", -1))\n\nimport { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\n\r\n\nconst _sfc_main = {\n  __name: 'NBUView',\n  emits: ['loadedData'],\n  setup(__props, { emit }) {\n\r\nconst grn = () => currencySymbol('ukr');\r\n\r\nconst now = useNow();\r\nconst formatDate = useDateFormat(now, 'YYYYMMDD');\r\n\r\nconst mainDb = reactive({});\r\n\r\n\r\n\r\nconst NBUCurrency = computed(() => {\r\n  return Object.keys(mainDb).map((currency) => {\r\n    return {\r\n      currency: currency,\r\n      price: Math.round(mainDb[currency] * 100) / 100,\r\n      invertPrice: Math.round((1 / mainDb[currency]) * 100) / 100,\r\n      symbol: () => currencySymbol('usd'),\r\n      flag: currency.toLowerCase().slice(0, 2),\r\n    };\r\n  });\r\n});\r\n\r\nconst loadData = async (currency, date = formatDate.value) => {\r\n  try {\r\n    const uri = `${import.meta.env.VITE_NBU_URL}/exchange?valcode=${currency}&date=${date}&json`;\r\n    const res = await fetch(uri);\r\n    const data = await res.json();\r\n    mainDb[currency] = data[0].rate;\r\n  } catch (error) {\r\n    console.error(error);\r\n    debugger;\r\n  } finally {\r\n    console.log('loaded data', date);\r\n  }\r\n};\r\n\r\nonMounted(() => {\r\n  loadData('EUR');\r\n  loadData('RUB');\r\n  loadData('BYN');\r\n  loadData('USD');\r\n  emit('loadedData', mainDb);\r\n  console.log(mainDb);\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_icon = _resolveComponent(\"van-icon\")\n  const _component_CircleFlags = _resolveComponent(\"CircleFlags\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createTextVNode(_toDisplayString(mainDb) + \" \", 1),\n      _createVNode(_component_van_icon, { name: \"chat-o\" }),\n      _createElementVNode(\"ul\", null, [\n        _createTextVNode(\" x \"),\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(NBUCurrency.value, (i) => {\n          return (_openBlock(), _createElementBlock(\"li\", {\n            key: i.currency\n          }, [\n            _createVNode(_component_CircleFlags, {\n              size: \"medium\",\n              country: i.flag\n            }, null, 8, [\"country\"]),\n            _createTextVNode(\" \" + _toDisplayString(i.price) + \" \" + _toDisplayString(grn) + \" | \" + _toDisplayString(i.invertPrice) + \" \" + _toDisplayString(i.symbol), 1)\n          ]))\n        }), 128)),\n        _createTextVNode(\" x \")\n      ])\n    ])\n  ], 64))\n}\n}\n\n}\n\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/NBUView.vue?vue&type=style&index=0&scoped=bebe2ca2&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-bebe2ca2\"]])",
+      "start": 1698392048655,
+      "end": 1698392048665,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "result": "import { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-bebe2ca2\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"NBU\", -1))\n\nimport { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\n\r\n\nconst _sfc_main = {\n  __name: 'NBUView',\n  emits: ['loadedData'],\n  setup(__props, { emit }) {\n\r\nconst grn = () => currencySymbol('ukr');\r\n\r\nconst now = useNow();\r\nconst formatDate = useDateFormat(now, 'YYYYMMDD');\r\n\r\nconst mainDb = reactive({});\r\n\r\n\r\n\r\nconst NBUCurrency = computed(() => {\r\n  return Object.keys(mainDb).map((currency) => {\r\n    return {\r\n      currency: currency,\r\n      price: Math.round(mainDb[currency] * 100) / 100,\r\n      invertPrice: Math.round((1 / mainDb[currency]) * 100) / 100,\r\n      symbol: () => currencySymbol('usd'),\r\n      flag: currency.toLowerCase().slice(0, 2),\r\n    };\r\n  });\r\n});\r\n\r\nconst loadData = async (currency, date = formatDate.value) => {\r\n  try {\r\n    const uri = `${\"https://bank.gov.ua/NBUStatService/v1/statdirectory\"}/exchange?valcode=${currency}&date=${date}&json`;\r\n    const res = await fetch(uri);\r\n    const data = await res.json();\r\n    mainDb[currency] = data[0].rate;\r\n  } catch (error) {\r\n    console.error(error);\r\n    debugger;\r\n  } finally {\r\n    console.log('loaded data', date);\r\n  }\r\n};\r\n\r\nonMounted(() => {\r\n  loadData('EUR');\r\n  loadData('RUB');\r\n  loadData('BYN');\r\n  loadData('USD');\r\n  emit('loadedData', mainDb);\r\n  console.log(mainDb);\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_icon = _resolveComponent(\"van-icon\")\n  const _component_CircleFlags = _resolveComponent(\"CircleFlags\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createTextVNode(_toDisplayString(mainDb) + \" \", 1),\n      _createVNode(_component_van_icon, { name: \"chat-o\" }),\n      _createElementVNode(\"ul\", null, [\n        _createTextVNode(\" x \"),\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(NBUCurrency.value, (i) => {\n          return (_openBlock(), _createElementBlock(\"li\", {\n            key: i.currency\n          }, [\n            _createVNode(_component_CircleFlags, {\n              size: \"medium\",\n              country: i.flag\n            }, null, 8, [\"country\"]),\n            _createTextVNode(\" \" + _toDisplayString(i.price) + \" \" + _toDisplayString(grn) + \" | \" + _toDisplayString(i.invertPrice) + \" \" + _toDisplayString(i.symbol), 1)\n          ]))\n        }), 128)),\n        _createTextVNode(\" x \")\n      ])\n    ])\n  ], 64))\n}\n}\n\n}\n\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/NBUView.vue?vue&type=style&index=0&scoped=bebe2ca2&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-bebe2ca2\"]])",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392048665,
+      "end": 1698392048665,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import { Icon as __unplugin_components_0 } from 'vant/es';import 'vant/es/icon/style/index';\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-bebe2ca2\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"NBU\", -1))\n\nimport { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\n\r\n\nconst _sfc_main = {\n  __name: 'NBUView',\n  emits: ['loadedData'],\n  setup(__props, { emit }) {\n\r\nconst grn = () => currencySymbol('ukr');\r\n\r\nconst now = useNow();\r\nconst formatDate = useDateFormat(now, 'YYYYMMDD');\r\n\r\nconst mainDb = reactive({});\r\n\r\n\r\n\r\nconst NBUCurrency = computed(() => {\r\n  return Object.keys(mainDb).map((currency) => {\r\n    return {\r\n      currency: currency,\r\n      price: Math.round(mainDb[currency] * 100) / 100,\r\n      invertPrice: Math.round((1 / mainDb[currency]) * 100) / 100,\r\n      symbol: () => currencySymbol('usd'),\r\n      flag: currency.toLowerCase().slice(0, 2),\r\n    };\r\n  });\r\n});\r\n\r\nconst loadData = async (currency, date = formatDate.value) => {\r\n  try {\r\n    const uri = `${\"https://bank.gov.ua/NBUStatService/v1/statdirectory\"}/exchange?valcode=${currency}&date=${date}&json`;\r\n    const res = await fetch(uri);\r\n    const data = await res.json();\r\n    mainDb[currency] = data[0].rate;\r\n  } catch (error) {\r\n    console.error(error);\r\n    debugger;\r\n  } finally {\r\n    console.log('loaded data', date);\r\n  }\r\n};\r\n\r\nonMounted(() => {\r\n  loadData('EUR');\r\n  loadData('RUB');\r\n  loadData('BYN');\r\n  loadData('USD');\r\n  emit('loadedData', mainDb);\r\n  console.log(mainDb);\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_icon = __unplugin_components_0\n  const _component_CircleFlags = _resolveComponent(\"CircleFlags\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createTextVNode(_toDisplayString(mainDb) + \" \", 1),\n      _createVNode(_component_van_icon, { name: \"chat-o\" }),\n      _createElementVNode(\"ul\", null, [\n        _createTextVNode(\" x \"),\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(NBUCurrency.value, (i) => {\n          return (_openBlock(), _createElementBlock(\"li\", {\n            key: i.currency\n          }, [\n            _createVNode(_component_CircleFlags, {\n              size: \"medium\",\n              country: i.flag\n            }, null, 8, [\"country\"]),\n            _createTextVNode(\" \" + _toDisplayString(i.price) + \" \" + _toDisplayString(grn) + \" | \" + _toDisplayString(i.invertPrice) + \" \" + _toDisplayString(i.symbol), 1)\n          ]))\n        }), 128)),\n        _createTextVNode(\" x \")\n      ])\n    ])\n  ], 64))\n}\n}\n\n}\n\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/NBUView.vue?vue&type=style&index=0&scoped=bebe2ca2&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-bebe2ca2\"]])",
+      "start": 1698392048665,
+      "end": 1698392048666,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/NBUView.vue"
+        ],
+        "sourcesContent": [
+          "import { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-bebe2ca2\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"NBU\", -1))\n\nimport { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\n\r\n\nconst _sfc_main = {\n  __name: 'NBUView',\n  emits: ['loadedData'],\n  setup(__props, { emit }) {\n\r\nconst grn = () => currencySymbol('ukr');\r\n\r\nconst now = useNow();\r\nconst formatDate = useDateFormat(now, 'YYYYMMDD');\r\n\r\nconst mainDb = reactive({});\r\n\r\n\r\n\r\nconst NBUCurrency = computed(() => {\r\n  return Object.keys(mainDb).map((currency) => {\r\n    return {\r\n      currency: currency,\r\n      price: Math.round(mainDb[currency] * 100) / 100,\r\n      invertPrice: Math.round((1 / mainDb[currency]) * 100) / 100,\r\n      symbol: () => currencySymbol('usd'),\r\n      flag: currency.toLowerCase().slice(0, 2),\r\n    };\r\n  });\r\n});\r\n\r\nconst loadData = async (currency, date = formatDate.value) => {\r\n  try {\r\n    const uri = `${\"https://bank.gov.ua/NBUStatService/v1/statdirectory\"}/exchange?valcode=${currency}&date=${date}&json`;\r\n    const res = await fetch(uri);\r\n    const data = await res.json();\r\n    mainDb[currency] = data[0].rate;\r\n  } catch (error) {\r\n    console.error(error);\r\n    debugger;\r\n  } finally {\r\n    console.log('loaded data', date);\r\n  }\r\n};\r\n\r\nonMounted(() => {\r\n  loadData('EUR');\r\n  loadData('RUB');\r\n  loadData('BYN');\r\n  loadData('USD');\r\n  emit('loadedData', mainDb);\r\n  console.log(mainDb);\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_icon = _resolveComponent(\"van-icon\")\n  const _component_CircleFlags = _resolveComponent(\"CircleFlags\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createTextVNode(_toDisplayString(mainDb) + \" \", 1),\n      _createVNode(_component_van_icon, { name: \"chat-o\" }),\n      _createElementVNode(\"ul\", null, [\n        _createTextVNode(\" x \"),\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(NBUCurrency.value, (i) => {\n          return (_openBlock(), _createElementBlock(\"li\", {\n            key: i.currency\n          }, [\n            _createVNode(_component_CircleFlags, {\n              size: \"medium\",\n              country: i.flag\n            }, null, 8, [\"country\"]),\n            _createTextVNode(\" \" + _toDisplayString(i.price) + \" \" + _toDisplayString(grn) + \" | \" + _toDisplayString(i.invertPrice) + \" \" + _toDisplayString(i.symbol), 1)\n          ]))\n        }), 128)),\n        _createTextVNode(\" x \")\n      ])\n    ])\n  ], 64))\n}\n}\n\n}\n\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/NBUView.vue?vue&type=style&index=0&scoped=bebe2ca2&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-bebe2ca2\"]])"
+        ],
+        "names": [],
+        "mappings": ";AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,8BAA8B,uBAA6B;AAC3D;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392048666,
+      "end": 1698392048666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392048666,
+      "end": 1698392048666,
+      "order": "normal"
+    }
+  ]
+}

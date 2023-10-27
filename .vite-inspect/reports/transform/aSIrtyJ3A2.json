@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/composables/use-height.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { useRect } from \"@vant/use\";\nimport { ref, onMounted, nextTick, watch } from \"vue\";\nimport { windowHeight, windowWidth } from \"../utils/index.mjs\";\nimport { onPopupReopen } from \"./on-popup-reopen.mjs\";\nconst useHeight = (element, withSafeArea) => {\n  const height = ref();\n  const setHeight = () => {\n    height.value = useRect(element).height;\n  };\n  onMounted(() => {\n    nextTick(setHeight);\n    if (withSafeArea) {\n      for (let i = 1; i <= 3; i++) {\n        setTimeout(setHeight, 100 * i);\n      }\n    }\n  });\n  onPopupReopen(() => nextTick(setHeight));\n  watch([windowWidth, windowHeight], setHeight);\n  return height;\n};\nexport {\n  useHeight\n};\n",
+      "start": 1698392050872,
+      "end": 1698392050936,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050936,
+      "end": 1698392050936,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050936,
+      "end": 1698392050936,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050936,
+      "end": 1698392050936,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050936,
+      "end": 1698392050936,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050936,
+      "end": 1698392050936,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050936,
+      "end": 1698392050936,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050936,
+      "end": 1698392050936,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050937,
+      "end": 1698392050937,
+      "order": "normal"
+    }
+  ]
+}

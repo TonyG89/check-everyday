@@ -1,0 +1,126 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/src/components/MyIpView.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <h2>All about my PC</h2>\r\n  <div>\r\n    <van-config-provider theme=\"dark\">\r\n      <van-cell title=\"myIp \" :value=\"ip\" />\r\n      <van-cell title=\"city|country \" :value=\"`${city} | ${country}`\" />\r\n      <van-button plain type=\"success\" @click=\"loadData\">refresh</van-button>\r\n    </van-config-provider>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nimport { onMounted, ref } from 'vue';\r\n\r\nconst ip = ref('...');\r\nconst city = ref('...');\r\nconst country = ref('...');\r\n\r\nconst getIp = async () => {\r\n  const myIp = await fetch(import.meta.env.VITE_IP_URI).then((res) => res.json());\r\n  ip.value = myIp.ip;\r\n};\r\n\r\nconst getIpInfo = async (ip) => {\r\n  const url = `${import.meta.env.VITE_IP_PLACE_URL}/${ip}/json/`;\r\n  console.log(url);\r\n  // const getInfo = await fetch(url).then((res) => res.json());\r\n  const getInfo = await fetch(`https://ipapi.co/${ip}/json/`).then((res) => res.json());\r\n  city.value = getInfo.city;\r\n  country.value = getInfo.country_name;\r\n};\r\n\r\nconst loadData = async () => {\r\n  await getIp();\r\n  getIpInfo(ip.value);\r\n};\r\n\r\nonMounted(() => {\r\n  loadData();\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n",
+      "start": 1698392048052,
+      "end": 1698392048645,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392048645,
+      "end": 1698392048645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392048645,
+      "end": 1698392048645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392048645,
+      "end": 1698392048645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392048645,
+      "end": 1698392048645,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"All about my PC\", -1)\n\nimport { onMounted, ref } from 'vue';\r\n\r\n\nconst _sfc_main = {\n  __name: 'MyIpView',\n  setup(__props) {\n\r\nconst ip = ref('...');\r\nconst city = ref('...');\r\nconst country = ref('...');\r\n\r\nconst getIp = async () => {\r\n  const myIp = await fetch(import.meta.env.VITE_IP_URI).then((res) => res.json());\r\n  ip.value = myIp.ip;\r\n};\r\n\r\nconst getIpInfo = async (ip) => {\r\n  const url = `${import.meta.env.VITE_IP_PLACE_URL}/${ip}/json/`;\r\n  console.log(url);\r\n  // const getInfo = await fetch(url).then((res) => res.json());\r\n  const getInfo = await fetch(`https://ipapi.co/${ip}/json/`).then((res) => res.json());\r\n  city.value = getInfo.city;\r\n  country.value = getInfo.country_name;\r\n};\r\n\r\nconst loadData = async () => {\r\n  await getIp();\r\n  getIpInfo(ip.value);\r\n};\r\n\r\nonMounted(() => {\r\n  loadData();\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_cell = _resolveComponent(\"van-cell\")\n  const _component_van_button = _resolveComponent(\"van-button\")\n  const _component_van_config_provider = _resolveComponent(\"van-config-provider\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createVNode(_component_van_config_provider, { theme: \"dark\" }, {\n        default: _withCtx(() => [\n          _createVNode(_component_van_cell, {\n            title: \"myIp \",\n            value: ip.value\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_cell, {\n            title: \"city|country \",\n            value: `${city.value} | ${country.value}`\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_button, {\n            plain: \"\",\n            type: \"success\",\n            onClick: loadData\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\"refresh\")\n            ]),\n            _: 1\n          })\n        ]),\n        _: 1\n      })\n    ])\n  ], 64))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1698392048645,
+      "end": 1698392048649,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "result": "import { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"All about my PC\", -1)\n\nimport { onMounted, ref } from 'vue';\r\n\r\n\nconst _sfc_main = {\n  __name: 'MyIpView',\n  setup(__props) {\n\r\nconst ip = ref('...');\r\nconst city = ref('...');\r\nconst country = ref('...');\r\n\r\nconst getIp = async () => {\r\n  const myIp = await fetch(\"https://api.ipify.org?format=json\").then((res) => res.json());\r\n  ip.value = myIp.ip;\r\n};\r\n\r\nconst getIpInfo = async (ip) => {\r\n  const url = `${\"https://ipapi.co\"}/${ip}/json/`;\r\n  console.log(url);\r\n  // const getInfo = await fetch(url).then((res) => res.json());\r\n  const getInfo = await fetch(`https://ipapi.co/${ip}/json/`).then((res) => res.json());\r\n  city.value = getInfo.city;\r\n  country.value = getInfo.country_name;\r\n};\r\n\r\nconst loadData = async () => {\r\n  await getIp();\r\n  getIpInfo(ip.value);\r\n};\r\n\r\nonMounted(() => {\r\n  loadData();\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_cell = _resolveComponent(\"van-cell\")\n  const _component_van_button = _resolveComponent(\"van-button\")\n  const _component_van_config_provider = _resolveComponent(\"van-config-provider\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createVNode(_component_van_config_provider, { theme: \"dark\" }, {\n        default: _withCtx(() => [\n          _createVNode(_component_van_cell, {\n            title: \"myIp \",\n            value: ip.value\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_cell, {\n            title: \"city|country \",\n            value: `${city.value} | ${country.value}`\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_button, {\n            plain: \"\",\n            type: \"success\",\n            onClick: loadData\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\"refresh\")\n            ]),\n            _: 1\n          })\n        ]),\n        _: 1\n      })\n    ])\n  ], 64))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1698392048649,
+      "end": 1698392048649,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392048649,
+      "end": 1698392048649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392048649,
+      "end": 1698392048649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392048649,
+      "end": 1698392048650,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392048650,
+      "end": 1698392048650,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392048650,
+      "end": 1698392048650,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392048650,
+      "end": 1698392048650,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392048650,
+      "end": 1698392048650,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import { ConfigProvider as __unplugin_components_2 } from 'vant/es';import 'vant/es/config-provider/style/index';\nimport { Button as __unplugin_components_1 } from 'vant/es';import 'vant/es/button/style/index';\nimport { Cell as __unplugin_components_0 } from 'vant/es';import 'vant/es/cell/style/index';\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"All about my PC\", -1)\n\nimport { onMounted, ref } from 'vue';\r\n\r\n\nconst _sfc_main = {\n  __name: 'MyIpView',\n  setup(__props) {\n\r\nconst ip = ref('...');\r\nconst city = ref('...');\r\nconst country = ref('...');\r\n\r\nconst getIp = async () => {\r\n  const myIp = await fetch(\"https://api.ipify.org?format=json\").then((res) => res.json());\r\n  ip.value = myIp.ip;\r\n};\r\n\r\nconst getIpInfo = async (ip) => {\r\n  const url = `${\"https://ipapi.co\"}/${ip}/json/`;\r\n  console.log(url);\r\n  // const getInfo = await fetch(url).then((res) => res.json());\r\n  const getInfo = await fetch(`https://ipapi.co/${ip}/json/`).then((res) => res.json());\r\n  city.value = getInfo.city;\r\n  country.value = getInfo.country_name;\r\n};\r\n\r\nconst loadData = async () => {\r\n  await getIp();\r\n  getIpInfo(ip.value);\r\n};\r\n\r\nonMounted(() => {\r\n  loadData();\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_cell = __unplugin_components_0\n  const _component_van_button = __unplugin_components_1\n  const _component_van_config_provider = __unplugin_components_2\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createVNode(_component_van_config_provider, { theme: \"dark\" }, {\n        default: _withCtx(() => [\n          _createVNode(_component_van_cell, {\n            title: \"myIp \",\n            value: ip.value\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_cell, {\n            title: \"city|country \",\n            value: `${city.value} | ${country.value}`\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_button, {\n            plain: \"\",\n            type: \"success\",\n            onClick: loadData\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\"refresh\")\n            ]),\n            _: 1\n          })\n        ]),\n        _: 1\n      })\n    ])\n  ], 64))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1698392048650,
+      "end": 1698392048650,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/MyIpView.vue"
+        ],
+        "sourcesContent": [
+          "import { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"All about my PC\", -1)\n\nimport { onMounted, ref } from 'vue';\r\n\r\n\nconst _sfc_main = {\n  __name: 'MyIpView',\n  setup(__props) {\n\r\nconst ip = ref('...');\r\nconst city = ref('...');\r\nconst country = ref('...');\r\n\r\nconst getIp = async () => {\r\n  const myIp = await fetch(\"https://api.ipify.org?format=json\").then((res) => res.json());\r\n  ip.value = myIp.ip;\r\n};\r\n\r\nconst getIpInfo = async (ip) => {\r\n  const url = `${\"https://ipapi.co\"}/${ip}/json/`;\r\n  console.log(url);\r\n  // const getInfo = await fetch(url).then((res) => res.json());\r\n  const getInfo = await fetch(`https://ipapi.co/${ip}/json/`).then((res) => res.json());\r\n  city.value = getInfo.city;\r\n  country.value = getInfo.country_name;\r\n};\r\n\r\nconst loadData = async () => {\r\n  await getIp();\r\n  getIpInfo(ip.value);\r\n};\r\n\r\nonMounted(() => {\r\n  loadData();\r\n});\r\n\nreturn (_ctx, _cache) => {\n  const _component_van_cell = _resolveComponent(\"van-cell\")\n  const _component_van_button = _resolveComponent(\"van-button\")\n  const _component_van_config_provider = _resolveComponent(\"van-config-provider\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _hoisted_1,\n    _createElementVNode(\"div\", null, [\n      _createVNode(_component_van_config_provider, { theme: \"dark\" }, {\n        default: _withCtx(() => [\n          _createVNode(_component_van_cell, {\n            title: \"myIp \",\n            value: ip.value\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_cell, {\n            title: \"city|country \",\n            value: `${city.value} | ${country.value}`\n          }, null, 8, [\"value\"]),\n          _createVNode(_component_van_button, {\n            plain: \"\",\n            type: \"success\",\n            onClick: loadData\n          }, {\n            default: _withCtx(() => [\n              _createTextVNode(\"refresh\")\n            ]),\n            _: 1\n          })\n        ]),\n        _: 1\n      })\n    ])\n  ], 64))\n}\n}\n\n}\n\n\n\nexport default _sfc_main"
+        ],
+        "names": [],
+        "mappings": ";;;AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,8BAA8B,uBAA6B;AAC3D,gCAAgC,uBAA+B;AAC/D,yCAAyC,uBAAwC;AACjF;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392048650,
+      "end": 1698392048650,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392048651,
+      "end": 1698392048651,
+      "order": "normal"
+    }
+  ]
+}

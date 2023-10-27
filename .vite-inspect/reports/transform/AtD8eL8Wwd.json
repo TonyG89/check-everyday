@@ -1,0 +1,131 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/src/App.vue?vue&type=style&index=0&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.logo {\r\n  height: 6em;\r\n  padding: 1.5em;\r\n  will-change: filter;\r\n  transition: filter 300ms;\r\n}\r\n.logo:hover {\r\n  filter: drop-shadow(0 0 2em #646cffaa);\r\n}\r\n.logo.vue:hover {\r\n  filter: drop-shadow(0 0 2em #42b883aa);\r\n}\r\nh2 {\r\n  margin-top: 2rem;\r\n}\r\n",
+      "start": 1698392048050,
+      "end": 1698392048050
+    },
+    {
+      "name": "vite:css",
+      "result": "\r\n.logo {\r\n  height: 6em;\r\n  padding: 1.5em;\r\n  will-change: filter;\r\n  transition: filter 300ms;\r\n}\r\n.logo:hover {\r\n  filter: drop-shadow(0 0 2em #646cffaa);\r\n}\r\n.logo.vue:hover {\r\n  filter: drop-shadow(0 0 2em #42b883aa);\r\n}\r\nh2 {\r\n  margin-top: 2rem;\r\n}\r\n",
+      "start": 1698392048050,
+      "end": 1698392048620,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392048620,
+      "end": 1698392048620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392048620,
+      "end": 1698392048620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392048620,
+      "end": 1698392048620,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n.logo {\r\n  height: 6em;\r\n  padding: 1.5em;\r\n  will-change: filter;\r\n  transition: filter 300ms;\n}\n.logo:hover {\r\n  filter: drop-shadow(0 0 2em #646cffaa);\n}\n.logo.vue:hover {\r\n  filter: drop-shadow(0 0 2em #42b883aa);\n}\nh2 {\r\n  margin-top: 2rem;\n}\r\n",
+      "start": 1698392048620,
+      "end": 1698392048621,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392048621,
+      "end": 1698392048621,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */export default ''",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/App.vue?vue&type=style&index=0&lang.css"
+        ],
+        "sourcesContent": [
+          "export default ''"
+        ],
+        "names": [],
+        "mappings": "sCAAA"
+      }
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392048622,
+      "end": 1698392048622,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392048623,
+      "end": 1698392048623,
+      "order": "normal"
+    }
+  ]
+}

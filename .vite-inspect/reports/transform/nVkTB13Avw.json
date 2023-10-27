@@ -1,0 +1,108 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/picker/PickerToolbar.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { createVNode as _createVNode } from \"vue\";\nimport { defineComponent } from \"vue\";\nimport { bem, t } from \"./utils.mjs\";\nimport { createNamespace, HAPTICS_FEEDBACK } from \"../utils/index.mjs\";\nconst [name] = createNamespace(\"picker-toolbar\");\nconst pickerToolbarProps = {\n  title: String,\n  cancelButtonText: String,\n  confirmButtonText: String\n};\nconst pickerToolbarSlots = [\"cancel\", \"confirm\", \"title\", \"toolbar\"];\nconst pickerToolbarPropKeys = Object.keys(pickerToolbarProps);\nvar stdin_default = defineComponent({\n  name,\n  props: pickerToolbarProps,\n  emits: [\"confirm\", \"cancel\"],\n  setup(props, {\n    emit,\n    slots\n  }) {\n    const renderTitle = () => {\n      if (slots.title) {\n        return slots.title();\n      }\n      if (props.title) {\n        return _createVNode(\"div\", {\n          \"class\": [bem(\"title\"), \"van-ellipsis\"]\n        }, [props.title]);\n      }\n    };\n    const onCancel = () => emit(\"cancel\");\n    const onConfirm = () => emit(\"confirm\");\n    const renderCancel = () => {\n      const text = props.cancelButtonText || t(\"cancel\");\n      return _createVNode(\"button\", {\n        \"type\": \"button\",\n        \"class\": [bem(\"cancel\"), HAPTICS_FEEDBACK],\n        \"onClick\": onCancel\n      }, [slots.cancel ? slots.cancel() : text]);\n    };\n    const renderConfirm = () => {\n      const text = props.confirmButtonText || t(\"confirm\");\n      return _createVNode(\"button\", {\n        \"type\": \"button\",\n        \"class\": [bem(\"confirm\"), HAPTICS_FEEDBACK],\n        \"onClick\": onConfirm\n      }, [slots.confirm ? slots.confirm() : text]);\n    };\n    return () => _createVNode(\"div\", {\n      \"class\": bem(\"toolbar\")\n    }, [slots.toolbar ? slots.toolbar() : [renderCancel(), renderTitle(), renderConfirm()]]);\n  }\n});\nexport {\n  stdin_default as default,\n  pickerToolbarPropKeys,\n  pickerToolbarProps,\n  pickerToolbarSlots\n};\n",
+      "start": 1698392050846,
+      "end": 1698392050895,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698392050895,
+      "end": 1698392050895,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698392050895,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1698392050896,
+      "end": 1698392050896,
+      "order": "normal"
+    }
+  ]
+}
