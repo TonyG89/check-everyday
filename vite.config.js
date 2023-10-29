@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import path from 'path'
 import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from '@vant/auto-import-resolver';
 import vue from '@vitejs/plugin-vue'
@@ -15,5 +16,9 @@ export default defineConfig({
     Components({
       resolvers: [VantResolver()],
     }),],
-
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 })

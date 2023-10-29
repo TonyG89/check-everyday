@@ -1,0 +1,98 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/.vite/deps/vue-circle-flags.js?v=4ff928dc",
+  "transforms": [
+    {
+      "name": "vite:optimized-deps",
+      "result": "import {\n  P,\n  W,\n  g\n} from \"./chunk-IITFSCBX.js\";\nimport \"./chunk-J66AP6DF.js\";\nimport \"./chunk-76J2PTFD.js\";\nexport {\n  P as countryCodes,\n  g as countryList,\n  W as default\n};\n//# sourceMappingURL=vue-circle-flags.js.map\n",
+      "start": 1698611776205,
+      "end": 1698611777456,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698611777456,
+      "end": 1698611777456,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698611777456,
+      "end": 1698611777456,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698611777456,
+      "end": 1698611777456,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698611777456,
+      "end": 1698611777456,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698611777456,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "post"
+    },
+    {
+      "name": "vite:client-inject",
+      "start": 1698611777457,
+      "end": 1698611777457,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import {\n  P,\n  W,\n  g\n} from \"/node_modules/.vite/deps/chunk-IITFSCBX.js?v=37516d65\";\nimport \"/node_modules/.vite/deps/chunk-J66AP6DF.js?v=37516d65\";\nimport \"/node_modules/.vite/deps/chunk-76J2PTFD.js?v=37516d65\";\nexport {\n  P as countryCodes,\n  g as countryList,\n  W as default\n};\n//# sourceMappingURL=vue-circle-flags.js.map\n",
+      "start": 1698611777457,
+      "end": 1698611777458,
+      "order": "normal",
+      "sourcemaps": null
+    }
+  ]
+}

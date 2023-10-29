@@ -1,0 +1,98 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/.vite/deps/european_union-ef518dc6-ZLWWRX3X.js?v=37516d65",
+  "transforms": [
+    {
+      "name": "vite:optimized-deps",
+      "result": "import {\n  computed,\n  createBaseVNode,\n  createCommentVNode,\n  createElementBlock,\n  defineComponent,\n  normalizeStyle,\n  onMounted,\n  openBlock,\n  ref,\n  toDisplayString\n} from \"./chunk-J66AP6DF.js\";\nimport \"./chunk-76J2PTFD.js\";\n\n// node_modules/vue-circle-flags/dist/european_union-ef518dc6.js\nvar v = [\"viewBox\"];\nvar k = [\"id\"];\nvar p = createBaseVNode(\"circle\", {\n  cx: \"256\",\n  cy: \"256\",\n  r: \"256\",\n  fill: \"#fff\"\n}, null, -1);\nvar g = [\n  p\n];\nvar z = [\"mask\"];\nvar w = { key: 0 };\nvar x = createBaseVNode(\"path\", {\n  fill: \"#0052b4\",\n  d: \"M0 0h512v512H0z\"\n}, null, -1);\nvar y = createBaseVNode(\"path\", {\n  fill: \"#ffda44\",\n  d: \"m256 100.2 8.3 25.5H291l-21.7 15.7 8.3 25.6-21.7-15.8-21.7 15.8 8.3-25.6-21.7-15.7h26.8zm-110.2 45.6 24 12.2 18.9-19-4.2 26.5 23.9 12.2-26.5 4.2-4.2 26.5-12.2-24-26.5 4.3 19-19zM100.2 256l25.5-8.3V221l15.7 21.7 25.6-8.3-15.8 21.7 15.8 21.7-25.6-8.3-15.7 21.7v-26.8zm45.6 110.2 12.2-24-19-18.9 26.5 4.2 12.2-23.9 4.2 26.5 26.5 4.2-24 12.2 4.3 26.5-19-19zM256 411.8l-8.3-25.5H221l21.7-15.7-8.3-25.6 21.7 15.8 21.7-15.8-8.3 25.6 21.7 15.7h-26.8zm110.2-45.6-24-12.2-18.9 19 4.2-26.5-23.9-12.2 26.5-4.2 4.2-26.5 12.2 24 26.5-4.3-19 19zM411.8 256l-25.5 8.3V291l-15.7-21.7-25.6 8.3 15.8-21.7-15.8-21.7 25.6 8.3 15.7-21.7v26.8zm-45.6-110.2-12.2 24 19 18.9-26.5-4.2-12.2 23.9-4.2-26.5-26.5-4.2 24-12.2-4.3-26.5 19 19z\"\n}, null, -1);\nvar W = { fill: \"none\" };\nvar $ = [\"r\"];\nvar C = defineComponent({\n  __name: \"european_union\",\n  props: {\n    flagName: {},\n    strokeColor: { default: \"#000\" },\n    strokeWidth: { default: 0 }\n  },\n  setup(c) {\n    const e = c, o = ref(), s = computed(() => 512 + 2 * e.strokeWidth), n = computed(() => -e.strokeWidth), a = computed(() => 256 + e.strokeWidth / 2);\n    return onMounted(() => o.value = window.crypto.randomUUID()), (B, M) => (openBlock(), createElementBlock(\"svg\", {\n      xmlns: \"http://www.w3.org/2000/svg\",\n      class: \"svg-circle-flags\",\n      viewBox: `${n.value} ${n.value} ${s.value} ${s.value}`\n    }, [\n      createBaseVNode(\"mask\", {\n        id: `${o.value}`\n      }, g, 8, k),\n      createBaseVNode(\"g\", {\n        mask: `url(#${o.value})`\n      }, [\n        e.flagName ? (openBlock(), createElementBlock(\"title\", w, toDisplayString(e.flagName), 1)) : createCommentVNode(\"\", true),\n        x,\n        y\n      ], 8, z),\n      createBaseVNode(\"g\", W, [\n        createBaseVNode(\"circle\", {\n          cx: \"256\",\n          cy: \"256\",\n          r: a.value,\n          fill: \"none\",\n          style: normalizeStyle({ stroke: e.strokeColor, strokeWidth: e.strokeWidth })\n        }, null, 12, $)\n      ])\n    ], 8, v));\n  }\n});\nexport {\n  C as default\n};\n//# sourceMappingURL=european_union-ef518dc6-ZLWWRX3X.js.map\n",
+      "start": 1698611790661,
+      "end": 1698611790664,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "post"
+    },
+    {
+      "name": "vite:client-inject",
+      "start": 1698611790664,
+      "end": 1698611790664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import {\n  computed,\n  createBaseVNode,\n  createCommentVNode,\n  createElementBlock,\n  defineComponent,\n  normalizeStyle,\n  onMounted,\n  openBlock,\n  ref,\n  toDisplayString\n} from \"/node_modules/.vite/deps/chunk-J66AP6DF.js?v=37516d65\";\nimport \"/node_modules/.vite/deps/chunk-76J2PTFD.js?v=37516d65\";\n\n// node_modules/vue-circle-flags/dist/european_union-ef518dc6.js\nvar v = [\"viewBox\"];\nvar k = [\"id\"];\nvar p = createBaseVNode(\"circle\", {\n  cx: \"256\",\n  cy: \"256\",\n  r: \"256\",\n  fill: \"#fff\"\n}, null, -1);\nvar g = [\n  p\n];\nvar z = [\"mask\"];\nvar w = { key: 0 };\nvar x = createBaseVNode(\"path\", {\n  fill: \"#0052b4\",\n  d: \"M0 0h512v512H0z\"\n}, null, -1);\nvar y = createBaseVNode(\"path\", {\n  fill: \"#ffda44\",\n  d: \"m256 100.2 8.3 25.5H291l-21.7 15.7 8.3 25.6-21.7-15.8-21.7 15.8 8.3-25.6-21.7-15.7h26.8zm-110.2 45.6 24 12.2 18.9-19-4.2 26.5 23.9 12.2-26.5 4.2-4.2 26.5-12.2-24-26.5 4.3 19-19zM100.2 256l25.5-8.3V221l15.7 21.7 25.6-8.3-15.8 21.7 15.8 21.7-25.6-8.3-15.7 21.7v-26.8zm45.6 110.2 12.2-24-19-18.9 26.5 4.2 12.2-23.9 4.2 26.5 26.5 4.2-24 12.2 4.3 26.5-19-19zM256 411.8l-8.3-25.5H221l21.7-15.7-8.3-25.6 21.7 15.8 21.7-15.8-8.3 25.6 21.7 15.7h-26.8zm110.2-45.6-24-12.2-18.9 19 4.2-26.5-23.9-12.2 26.5-4.2 4.2-26.5 12.2 24 26.5-4.3-19 19zM411.8 256l-25.5 8.3V291l-15.7-21.7-25.6 8.3 15.8-21.7-15.8-21.7 25.6 8.3 15.7-21.7v26.8zm-45.6-110.2-12.2 24 19 18.9-26.5-4.2-12.2 23.9-4.2-26.5-26.5-4.2 24-12.2-4.3-26.5 19 19z\"\n}, null, -1);\nvar W = { fill: \"none\" };\nvar $ = [\"r\"];\nvar C = defineComponent({\n  __name: \"european_union\",\n  props: {\n    flagName: {},\n    strokeColor: { default: \"#000\" },\n    strokeWidth: { default: 0 }\n  },\n  setup(c) {\n    const e = c, o = ref(), s = computed(() => 512 + 2 * e.strokeWidth), n = computed(() => -e.strokeWidth), a = computed(() => 256 + e.strokeWidth / 2);\n    return onMounted(() => o.value = window.crypto.randomUUID()), (B, M) => (openBlock(), createElementBlock(\"svg\", {\n      xmlns: \"http://www.w3.org/2000/svg\",\n      class: \"svg-circle-flags\",\n      viewBox: `${n.value} ${n.value} ${s.value} ${s.value}`\n    }, [\n      createBaseVNode(\"mask\", {\n        id: `${o.value}`\n      }, g, 8, k),\n      createBaseVNode(\"g\", {\n        mask: `url(#${o.value})`\n      }, [\n        e.flagName ? (openBlock(), createElementBlock(\"title\", w, toDisplayString(e.flagName), 1)) : createCommentVNode(\"\", true),\n        x,\n        y\n      ], 8, z),\n      createBaseVNode(\"g\", W, [\n        createBaseVNode(\"circle\", {\n          cx: \"256\",\n          cy: \"256\",\n          r: a.value,\n          fill: \"none\",\n          style: normalizeStyle({ stroke: e.strokeColor, strokeWidth: e.strokeWidth })\n        }, null, 12, $)\n      ])\n    ], 8, v));\n  }\n});\nexport {\n  C as default\n};\n//# sourceMappingURL=european_union-ef518dc6-ZLWWRX3X.js.map\n",
+      "start": 1698611790664,
+      "end": 1698611790665,
+      "order": "normal",
+      "sourcemaps": null
+    }
+  ]
+}

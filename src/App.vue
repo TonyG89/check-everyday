@@ -20,7 +20,7 @@
 <script setup>
 import WeatherView from './components/WeatherView.vue';
 import MyIpView from './components/MyIpView.vue';
-// import CryptoCoinView from './components/CryptoCoinView.vue';
+import CryptoCoinView from './components/CryptoCoinView.vue';
 import CalendarView from './components/CalendarView.vue';
 import NBUView from './components/NBUView.vue';
 

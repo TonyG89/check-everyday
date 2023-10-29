@@ -1,0 +1,98 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/.vite/deps/vant_es_calendar_style_index.js?v=bf922239",
+  "transforms": [
+    {
+      "name": "vite:optimized-deps",
+      "result": "// node_modules/vant/es/calendar/style/index.mjs\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/style/base.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/badge/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/icon/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/loading/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/button/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/overlay/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/popup/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/toast/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/sticky/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/swipe/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/swipe-item/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/tabs/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/tab/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/picker/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/picker-group/index.css\";\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/calendar/index.css\";\n//# sourceMappingURL=vant_es_calendar_style_index.js.map\n",
+      "start": 1698611776269,
+      "end": 1698611777473,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "post"
+    },
+    {
+      "name": "vite:client-inject",
+      "start": 1698611777473,
+      "end": 1698611777473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "// node_modules/vant/es/calendar/style/index.mjs\nimport \"/node_modules/vant/es/style/base.css\";\nimport \"/node_modules/vant/es/badge/index.css\";\nimport \"/node_modules/vant/es/icon/index.css\";\nimport \"/node_modules/vant/es/loading/index.css\";\nimport \"/node_modules/vant/es/button/index.css\";\nimport \"/node_modules/vant/es/overlay/index.css\";\nimport \"/node_modules/vant/es/popup/index.css\";\nimport \"/node_modules/vant/es/toast/index.css\";\nimport \"/node_modules/vant/es/sticky/index.css\";\nimport \"/node_modules/vant/es/swipe/index.css\";\nimport \"/node_modules/vant/es/swipe-item/index.css\";\nimport \"/node_modules/vant/es/tabs/index.css\";\nimport \"/node_modules/vant/es/tab/index.css\";\nimport \"/node_modules/vant/es/picker/index.css\";\nimport \"/node_modules/vant/es/picker-group/index.css\";\nimport \"/node_modules/vant/es/calendar/index.css\";\n//# sourceMappingURL=vant_es_calendar_style_index.js.map\n",
+      "start": 1698611777473,
+      "end": 1698611777481,
+      "order": "normal",
+      "sourcemaps": null
+    }
+  ]
+}

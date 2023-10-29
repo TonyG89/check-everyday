@@ -1,0 +1,134 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\nroot {\r\n  // --van-calendar-day-margin-bottom: 400px;  // 4px\r\n}\r\n",
+      "start": 1698611775997,
+      "end": 1698611775997,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue"
+        ],
+        "names": [],
+        "mappings": ";AAkCA,CAAC,CAAC,CAAC,EAAE;EACH,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,EAAE,CAAC,CAAC;AACpD",
+        "file": "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n  <div>\r\n    <h2>CALENDAR</h2>\r\n    <!-- <van-cell title=\"Select Single Date\" :value=\"date\" @click=\"show = true\" /> -->\r\n    <van-calendar v-model:show=\"show\" @confirm=\"onConfirm\" />\r\n    <!-- <van-calendar show color=\"#ee0a24\" /> -->\r\n    <van-calendar title=\"Calendar\" :poppable=\"false\" :show-confirm=\"false\" :style=\"{ height: '500px' }\" />\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nimport { ref } from 'vue';\r\n\r\nexport default {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\nroot {\r\n  // --van-calendar-day-margin-bottom: 400px;  // 4px\r\n}\r\n</style>\r\n"
+        ]
+      }
+    },
+    {
+      "name": "vite:css",
+      "result": "",
+      "start": 1698611775997,
+      "end": 1698611776006,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698611776006,
+      "end": 1698611776006,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698611776006,
+      "end": 1698611776006,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698611776006,
+      "end": 1698611776006,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "",
+      "start": 1698611776006,
+      "end": 1698611776007,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:define",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\nconst __vite__css = \"\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "result": "/* unplugin-vue-components disabled */import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\nconst __vite__css = \"\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss"
+        ],
+        "sourcesContent": [
+          "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\nconst __vite__css = \"\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))"
+        ],
+        "names": [],
+        "mappings": "sCAAA;AACA;AACA;AACA;AACA;AACA;AACA"
+      }
+    },
+    {
+      "name": "vite:client-inject",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\");/* unplugin-vue-components disabled */import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\nconst __vite__css = \"\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+      "start": 1698611776007,
+      "end": 1698611776007,
+      "order": "normal",
+      "sourcemaps": null
+    }
+  ]
+}

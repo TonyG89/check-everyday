@@ -2,99 +2,94 @@
   "resolvedId": "D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue",
   "transforms": [
     {
-      "name": "vite:load-fallback",
-      "result": "<template>\r\n  <div>\r\n<h2>crypto</h2>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\n\r\n</style>",
-      "start": 1698392048052,
-      "end": 1698392048636,
-      "sourcemaps": null
+      "name": "__load__",
+      "result": "<template>\r\n  <div>\r\n    <h2>crypto</h2>\r\n    {{ cryptoData?.symbol }}: {{ cryptoData?.openPrice }}\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nimport { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\nimport getSymbolFromCurrency from 'currency-symbol-map';\r\nimport urlData from '../data/urlData.js';\r\n\r\nconst { binance } = urlData;\r\nconst path = 'api/v3/ticker/24hr';\r\nconst params = '';\r\n// const symbol = 'BTCUSDT';\r\n\r\n// 'https://api.binance.com/api/v3/exchangeInfo?symbols=[\"BTCUSDT\",\"BNBBTC\"]'\r\n\r\nconst cryptoData = ref(null);\r\n\r\nconst fetchData = async (symbol) => {\r\n  // debugger\r\n  const res = await fetch(`${binance[0]}/${path}?symbol=${symbol}`);\r\n  const data = await res.json();\r\n  cryptoData.value = data;\r\n  return urlData;\r\n};\r\n\r\nonMounted(() => {\r\n  fetchData('BTCUSDT');\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n",
+      "start": 1698612665315,
+      "end": 1698612665315
     },
     {
       "name": "vite:css",
-      "start": 1698392048636,
-      "end": 1698392048636,
+      "start": 1698612665315,
+      "end": 1698612665315,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1698392048636,
-      "end": 1698392048636,
+      "start": 1698612665315,
+      "end": 1698612665315,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1698392048636,
-      "end": 1698392048636,
+      "start": 1698612665315,
+      "end": 1698612665315,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1698392048636,
-      "end": 1698392048636,
+      "start": 1698612665315,
+      "end": 1698612665315,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", null, _hoisted_2))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
-      "start": 1698392048636,
-      "end": 1698392048637,
+      "result": "import { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\nimport getSymbolFromCurrency from 'currency-symbol-map';\r\nimport urlData from '../data/urlData.js';\r\n\r\nconst path = 'api/v3/ticker/24hr';\r\nconst params = '';\r\n// const symbol = 'BTCUSDT';\r\n\r\n// 'https://api.binance.com/api/v3/exchangeInfo?symbols=[\"BTCUSDT\",\"BNBBTC\"]'\r\n\r\n\nconst _sfc_main = {\n  __name: 'CryptoCoinView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst { binance } = urlData;\r\nconst cryptoData = ref(null);\r\n\r\nconst fetchData = async (symbol) => {\r\n  // debugger\r\n  const res = await fetch(`${binance[0]}/${path}?symbol=${symbol}`);\r\n  const data = await res.json();\r\n  cryptoData.value = data;\r\n  return urlData;\r\n};\r\n\r\nonMounted(() => {\r\n  fetchData('BTCUSDT');\r\n});\r\n\nconst __returned__ = { binance, path, params, cryptoData, fetchData, computed, onMounted, reactive, ref, get useNow() { return useNow }, get useDateFormat() { return useDateFormat }, get getSymbolFromCurrency() { return getSymbolFromCurrency }, get urlData() { return urlData } }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createTextVNode(\" \" + _toDisplayString($setup.cryptoData?.symbol) + \": \" + _toDisplayString($setup.cryptoData?.openPrice), 1 /* TEXT */)\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"dc4677e8\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nexport const _rerender_only = true\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue\"]])",
+      "start": 1698612665315,
+      "end": 1698612665318,
       "order": "normal",
       "sourcemaps": {
-        "mappings": ""
+        "version": 3,
+        "names": [],
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n  <div>\r\n    <h2>crypto</h2>\r\n    {{ cryptoData?.symbol }}: {{ cryptoData?.openPrice }}\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nimport { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\nimport getSymbolFromCurrency from 'currency-symbol-map';\r\nimport urlData from '../data/urlData.js';\r\n\r\nconst { binance } = urlData;\r\nconst path = 'api/v3/ticker/24hr';\r\nconst params = '';\r\n// const symbol = 'BTCUSDT';\r\n\r\n// 'https://api.binance.com/api/v3/exchangeInfo?symbols=[\"BTCUSDT\",\"BNBBTC\"]'\r\n\r\nconst cryptoData = ref(null);\r\n\r\nconst fetchData = async (symbol) => {\r\n  // debugger\r\n  const res = await fetch(`${binance[0]}/${path}?symbol=${symbol}`);\r\n  const data = await res.json();\r\n  cryptoData.value = data;\r\n  return urlData;\r\n};\r\n\r\nonMounted(() => {\r\n  fetchData('BTCUSDT');\r\n});\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n"
+        ],
+        "mappings": "AAQA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1C,CAAC;AAED,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,C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"
       }
     },
     {
       "name": "vite:define",
-      "start": 1698392048637,
-      "end": 1698392048637,
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1698392048637,
-      "end": 1698392048637,
-      "order": "normal"
-    },
-    {
-      "name": "vite:build-html",
-      "start": 1698392048637,
-      "end": 1698392048637,
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1698392048637,
-      "end": 1698392048637,
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1698392048637,
-      "end": 1698392048637,
-      "order": "normal"
-    },
-    {
-      "name": "commonjs",
-      "start": 1698392048637,
-      "end": 1698392048637,
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1698392048637,
-      "end": 1698392048638,
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1698392048638,
-      "end": 1698392048638,
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "normal"
     },
     {
       "name": "unplugin-vue-components",
-      "result": "/* unplugin-vue-components disabled */const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", null, _hoisted_2))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
-      "start": 1698392048638,
-      "end": 1698392048638,
+      "result": "/* unplugin-vue-components disabled */import { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\nimport getSymbolFromCurrency from 'currency-symbol-map';\r\nimport urlData from '../data/urlData.js';\r\n\r\nconst path = 'api/v3/ticker/24hr';\r\nconst params = '';\r\n// const symbol = 'BTCUSDT';\r\n\r\n// 'https://api.binance.com/api/v3/exchangeInfo?symbols=[\"BTCUSDT\",\"BNBBTC\"]'\r\n\r\n\nconst _sfc_main = {\n  __name: 'CryptoCoinView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst { binance } = urlData;\r\nconst cryptoData = ref(null);\r\n\r\nconst fetchData = async (symbol) => {\r\n  // debugger\r\n  const res = await fetch(`${binance[0]}/${path}?symbol=${symbol}`);\r\n  const data = await res.json();\r\n  cryptoData.value = data;\r\n  return urlData;\r\n};\r\n\r\nonMounted(() => {\r\n  fetchData('BTCUSDT');\r\n});\r\n\nconst __returned__ = { binance, path, params, cryptoData, fetchData, computed, onMounted, reactive, ref, get useNow() { return useNow }, get useDateFormat() { return useDateFormat }, get getSymbolFromCurrency() { return getSymbolFromCurrency }, get urlData() { return urlData } }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createTextVNode(\" \" + _toDisplayString($setup.cryptoData?.symbol) + \": \" + _toDisplayString($setup.cryptoData?.openPrice), 1 /* TEXT */)\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"dc4677e8\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nexport const _rerender_only = true\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue\"]])",
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -102,23 +97,25 @@
           "D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue"
         ],
         "sourcesContent": [
-          "const _sfc_main = {}\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1)\nconst _hoisted_2 = [\n  _hoisted_1\n]\n\nfunction _sfc_render(_ctx, _cache) {\n  return (_openBlock(), _createElementBlock(\"div\", null, _hoisted_2))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])"
+          "import { computed, onMounted, reactive, ref } from 'vue';\r\nimport { useNow, useDateFormat } from '@vueuse/core';\r\nimport getSymbolFromCurrency from 'currency-symbol-map';\r\nimport urlData from '../data/urlData.js';\r\n\r\nconst path = 'api/v3/ticker/24hr';\r\nconst params = '';\r\n// const symbol = 'BTCUSDT';\r\n\r\n// 'https://api.binance.com/api/v3/exchangeInfo?symbols=[\"BTCUSDT\",\"BNBBTC\"]'\r\n\r\n\nconst _sfc_main = {\n  __name: 'CryptoCoinView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst { binance } = urlData;\r\nconst cryptoData = ref(null);\r\n\r\nconst fetchData = async (symbol) => {\r\n  // debugger\r\n  const res = await fetch(`${binance[0]}/${path}?symbol=${symbol}`);\r\n  const data = await res.json();\r\n  cryptoData.value = data;\r\n  return urlData;\r\n};\r\n\r\nonMounted(() => {\r\n  fetchData('BTCUSDT');\r\n});\r\n\nconst __returned__ = { binance, path, params, cryptoData, fetchData, computed, onMounted, reactive, ref, get useNow() { return useNow }, get useDateFormat() { return useDateFormat }, get getSymbolFromCurrency() { return getSymbolFromCurrency }, get urlData() { return urlData } }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createTextVNode(\" \" + _toDisplayString($setup.cryptoData?.symbol) + \": \" + _toDisplayString($setup.cryptoData?.openPrice), 1 /* TEXT */)\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"dc4677e8\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nexport const _rerender_only = true\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue\"]])"
         ],
         "names": [],
-        "mappings": "sCAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+        "mappings": "sCAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
       }
     },
     {
-      "name": "vite:build-import-analysis",
-      "start": 1698392048638,
-      "end": 1698392048638,
+      "name": "vite:client-inject",
+      "start": 1698612665318,
+      "end": 1698612665318,
       "order": "normal"
     },
     {
-      "name": "vite:reporter",
-      "start": 1698392048638,
-      "end": 1698392048638,
-      "order": "normal"
+      "name": "vite:import-analysis",
+      "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/src/components/CryptoCoinView.vue\");/* unplugin-vue-components disabled */import { computed, onMounted, reactive, ref } from \"/node_modules/.vite/deps/vue.js?v=d909f7f1\";\r\nimport { useNow, useDateFormat } from \"/node_modules/.vite/deps/@vueuse_core.js?v=806c6680\";\r\nimport __vite__cjsImport2_currencySymbolMap from \"/node_modules/.vite/deps/currency-symbol-map.js?v=b2c1ebdd\"; const getSymbolFromCurrency = __vite__cjsImport2_currencySymbolMap.__esModule ? __vite__cjsImport2_currencySymbolMap.default : __vite__cjsImport2_currencySymbolMap;\r\nimport urlData from \"/src/data/urlData.js\";\r\n\r\nconst path = 'api/v3/ticker/24hr';\r\nconst params = '';\r\n// const symbol = 'BTCUSDT';\r\n\r\n// 'https://api.binance.com/api/v3/exchangeInfo?symbols=[\"BTCUSDT\",\"BNBBTC\"]'\r\n\r\n\nconst _sfc_main = {\n  __name: 'CryptoCoinView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst { binance } = urlData;\r\nconst cryptoData = ref(null);\r\n\r\nconst fetchData = async (symbol) => {\r\n  // debugger\r\n  const res = await fetch(`${binance[0]}/${path}?symbol=${symbol}`);\r\n  const data = await res.json();\r\n  cryptoData.value = data;\r\n  return urlData;\r\n};\r\n\r\nonMounted(() => {\r\n  fetchData('BTCUSDT');\r\n});\r\n\nconst __returned__ = { binance, path, params, cryptoData, fetchData, computed, onMounted, reactive, ref, get useNow() { return useNow }, get useDateFormat() { return useDateFormat }, get getSymbolFromCurrency() { return getSymbolFromCurrency }, get urlData() { return urlData } }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"/node_modules/.vite/deps/vue.js?v=d909f7f1\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"crypto\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createTextVNode(\" \" + _toDisplayString($setup.cryptoData?.symbol) + \": \" + _toDisplayString($setup.cryptoData?.openPrice), 1 /* TEXT */)\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"dc4677e8\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nexport const _rerender_only = true\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from \"/@id/__x00__plugin-vue:export-helper\"\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CryptoCoinView.vue\"]])",
+      "start": 1698612665318,
+      "end": 1698612665321,
+      "order": "normal",
+      "sourcemaps": null
     }
   ]
 }

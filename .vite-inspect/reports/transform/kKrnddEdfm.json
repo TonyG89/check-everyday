@@ -2,99 +2,95 @@
   "resolvedId": "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue",
   "transforms": [
     {
-      "name": "vite:load-fallback",
+      "name": "__load__",
       "result": "<template>\r\n  <div>\r\n    <h2>CALENDAR</h2>\r\n    <!-- <van-cell title=\"Select Single Date\" :value=\"date\" @click=\"show = true\" /> -->\r\n    <van-calendar v-model:show=\"show\" @confirm=\"onConfirm\" />\r\n    <!-- <van-calendar show color=\"#ee0a24\" /> -->\r\n    <van-calendar title=\"Calendar\" :poppable=\"false\" :show-confirm=\"false\" :style=\"{ height: '500px' }\" />\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nimport { ref } from 'vue';\r\n\r\nexport default {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\nroot {\r\n  // --van-calendar-day-margin-bottom: 400px;  // 4px\r\n}\r\n</style>\r\n",
-      "start": 1698392048052,
-      "end": 1698392048677,
-      "sourcemaps": null
+      "start": 1698611775988,
+      "end": 1698611775988
     },
     {
       "name": "vite:css",
-      "start": 1698392048677,
-      "end": 1698392048677,
+      "start": 1698611775988,
+      "end": 1698611775988,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1698392048677,
-      "end": 1698392048677,
+      "start": 1698611775988,
+      "end": 1698611775988,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1698392048677,
-      "end": 1698392048677,
+      "start": 1698611775988,
+      "end": 1698611775988,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1698392048677,
-      "end": 1698392048677,
+      "start": 1698611775988,
+      "end": 1698611775988,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "\r\nimport { ref } from 'vue';\r\n\r\nconst _sfc_main = {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-fd601f07\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"CALENDAR\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_calendar = _resolveComponent(\"van-calendar\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createVNode(_component_van_calendar, {\n      show: $setup.show,\n      \"onUpdate:show\": _cache[0] || (_cache[0] = $event => (($setup.show) = $event)),\n      onConfirm: $setup.onConfirm\n    }, null, 8, [\"show\", \"onConfirm\"]),\n    _createVNode(_component_van_calendar, {\n      title: \"Calendar\",\n      poppable: false,\n      \"show-confirm\": false,\n      style: { height: '500px' }\n    })\n  ]))\n}\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=fd601f07&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-fd601f07\"]])",
-      "start": 1698392048677,
-      "end": 1698392048683,
+      "result": "\r\nimport { ref } from 'vue';\r\n\r\nconst _sfc_main = {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n\nimport { createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-6c3dda26\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"CALENDAR\", -1 /* HOISTED */))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_calendar = _resolveComponent(\"van-calendar\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createCommentVNode(\" <van-cell title=\\\"Select Single Date\\\" :value=\\\"date\\\" @click=\\\"show = true\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      show: $setup.show,\n      \"onUpdate:show\": _cache[0] || (_cache[0] = $event => (($setup.show) = $event)),\n      onConfirm: $setup.onConfirm\n    }, null, 8 /* PROPS */, [\"show\", \"onConfirm\"]),\n    _createCommentVNode(\" <van-calendar show color=\\\"#ee0a24\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      title: \"Calendar\",\n      poppable: false,\n      \"show-confirm\": false,\n      style: { height: '500px' }\n    })\n  ]))\n}\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\n\n_sfc_main.__hmrId = \"6c3dda26\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-6c3dda26\"],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue\"]])",
+      "start": 1698611775988,
+      "end": 1698611775995,
       "order": "normal",
       "sourcemaps": {
-        "mappings": ""
+        "version": 3,
+        "file": "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue",
+        "names": [],
+        "sources": [
+          "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n  <div>\r\n    <h2>CALENDAR</h2>\r\n    <!-- <van-cell title=\"Select Single Date\" :value=\"date\" @click=\"show = true\" /> -->\r\n    <van-calendar v-model:show=\"show\" @confirm=\"onConfirm\" />\r\n    <!-- <van-calendar show color=\"#ee0a24\" /> -->\r\n    <van-calendar title=\"Calendar\" :poppable=\"false\" :show-confirm=\"false\" :style=\"{ height: '500px' }\" />\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nimport { ref } from 'vue';\r\n\r\nexport default {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n</script>\r\n\r\n<style lang=\"scss\" scoped>\r\nroot {\r\n  // --van-calendar-day-margin-bottom: 400px;  // 4px\r\n}\r\n</style>\r\n"
+        ],
+        "mappings": ";AAWA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;;AAEzB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACN,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACpB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;;IAEvB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACvE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE;MAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;MAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAChC,CAAC;;IAED,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;MACL,CAAC,CAAC,CAAC,CAAC;MACJ,CAAC,CAAC,CAAC,CAAC;MACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACX,CAAC;EACH,CAAC;AACH,CAAC;;;;;iEA5BG,oBAAiB,YAAb,UAAQ;;;;;wBADd,oBAMM;IALJ,UAAiB;IACjB,yGAAmF;IACnF,aAAyD;MAAnC,IAAI,EAAE,WAAI;6DAAJ,WAAI;MAAG,SAAO,EAAE,gBAAS;;IACrD,gEAA8C;IAC9C,aAAsG;MAAxF,KAAK,EAAC,UAAU;MAAE,QAAQ,EAAE,KAAK;MAAG,cAAY,EAAE,KAAK;MAAG,KAAK,EAAE,mBAAmB"
       }
     },
     {
       "name": "vite:define",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "start": 1698611775995,
+      "end": 1698611775995,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1698392048683,
-      "end": 1698392048683,
-      "order": "normal"
-    },
-    {
-      "name": "vite:build-html",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "start": 1698611775995,
+      "end": 1698611775995,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "start": 1698611775995,
+      "end": 1698611775995,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1698392048683,
-      "end": 1698392048683,
-      "order": "normal"
-    },
-    {
-      "name": "commonjs",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "start": 1698611775995,
+      "end": 1698611775995,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "start": 1698611775995,
+      "end": 1698611775995,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "start": 1698611775995,
+      "end": 1698611775995,
       "order": "normal"
     },
     {
       "name": "unplugin-vue-components",
-      "result": "/* unplugin-vue-components disabled */import { Calendar as __unplugin_components_0 } from 'vant/es';import 'vant/es/calendar/style/index';\n\r\nimport { ref } from 'vue';\r\n\r\nconst _sfc_main = {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-fd601f07\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"CALENDAR\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_calendar = __unplugin_components_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createVNode(_component_van_calendar, {\n      show: $setup.show,\n      \"onUpdate:show\": _cache[0] || (_cache[0] = $event => (($setup.show) = $event)),\n      onConfirm: $setup.onConfirm\n    }, null, 8, [\"show\", \"onConfirm\"]),\n    _createVNode(_component_van_calendar, {\n      title: \"Calendar\",\n      poppable: false,\n      \"show-confirm\": false,\n      style: { height: '500px' }\n    })\n  ]))\n}\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=fd601f07&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-fd601f07\"]])",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "result": "/* unplugin-vue-components disabled */import { Calendar as __unplugin_components_0 } from 'vant/es';import 'vant/es/calendar/style/index';\n\r\nimport { ref } from 'vue';\r\n\r\nconst _sfc_main = {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n\nimport { createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-6c3dda26\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"CALENDAR\", -1 /* HOISTED */))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_calendar = __unplugin_components_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createCommentVNode(\" <van-cell title=\\\"Select Single Date\\\" :value=\\\"date\\\" @click=\\\"show = true\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      show: $setup.show,\n      \"onUpdate:show\": _cache[0] || (_cache[0] = $event => (($setup.show) = $event)),\n      onConfirm: $setup.onConfirm\n    }, null, 8 /* PROPS */, [\"show\", \"onConfirm\"]),\n    _createCommentVNode(\" <van-calendar show color=\\\"#ee0a24\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      title: \"Calendar\",\n      poppable: false,\n      \"show-confirm\": false,\n      style: { height: '500px' }\n    })\n  ]))\n}\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\n\n_sfc_main.__hmrId = \"6c3dda26\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-6c3dda26\"],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue\"]])",
+      "start": 1698611775995,
+      "end": 1698611775996,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -102,23 +98,25 @@
           "D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue"
         ],
         "sourcesContent": [
-          "\r\nimport { ref } from 'vue';\r\n\r\nconst _sfc_main = {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-fd601f07\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"CALENDAR\", -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_calendar = _resolveComponent(\"van-calendar\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createVNode(_component_van_calendar, {\n      show: $setup.show,\n      \"onUpdate:show\": _cache[0] || (_cache[0] = $event => (($setup.show) = $event)),\n      onConfirm: $setup.onConfirm\n    }, null, 8, [\"show\", \"onConfirm\"]),\n    _createVNode(_component_van_calendar, {\n      title: \"Calendar\",\n      poppable: false,\n      \"show-confirm\": false,\n      style: { height: '500px' }\n    })\n  ]))\n}\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=fd601f07&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-fd601f07\"]])"
+          "\r\nimport { ref } from 'vue';\r\n\r\nconst _sfc_main = {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n\nimport { createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-6c3dda26\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"CALENDAR\", -1 /* HOISTED */))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_calendar = _resolveComponent(\"van-calendar\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createCommentVNode(\" <van-cell title=\\\"Select Single Date\\\" :value=\\\"date\\\" @click=\\\"show = true\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      show: $setup.show,\n      \"onUpdate:show\": _cache[0] || (_cache[0] = $event => (($setup.show) = $event)),\n      onConfirm: $setup.onConfirm\n    }, null, 8 /* PROPS */, [\"show\", \"onConfirm\"]),\n    _createCommentVNode(\" <van-calendar show color=\\\"#ee0a24\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      title: \"Calendar\",\n      poppable: false,\n      \"show-confirm\": false,\n      style: { height: '500px' }\n    })\n  ]))\n}\n\nimport \"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\n\n_sfc_main.__hmrId = \"6c3dda26\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-6c3dda26\"],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue\"]])"
         ],
         "names": [],
-        "mappings": ";AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,kCAAkC,uBAAiC;AACnE;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+        "mappings": ";AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,kCAAkC,uBAAiC;AACnE;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
       }
     },
     {
-      "name": "vite:build-import-analysis",
-      "start": 1698392048683,
-      "end": 1698392048683,
+      "name": "vite:client-inject",
+      "start": 1698611775996,
+      "end": 1698611775996,
       "order": "normal"
     },
     {
-      "name": "vite:reporter",
-      "start": 1698392048683,
-      "end": 1698392048683,
-      "order": "normal"
+      "name": "vite:import-analysis",
+      "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/src/components/CalendarView.vue\");/* unplugin-vue-components disabled */import { Calendar as __unplugin_components_0 } from \"/node_modules/.vite/deps/vant_es.js?v=67e47849\";import \"/node_modules/.vite/deps/vant_es_calendar_style_index.js?v=bf922239\";\n\r\nimport { ref } from \"/node_modules/.vite/deps/vue.js?v=d909f7f1\";\r\n\r\nconst _sfc_main = {\r\n  setup() {\r\n    const date = ref('');\r\n    const show = ref(false);\r\n\r\n    const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;\r\n    const onConfirm = (value) => {\r\n      show.value = false;\r\n      date.value = formatDate(value);\r\n    };\r\n\r\n    return {\r\n      date,\r\n      show,\r\n      onConfirm,\r\n    };\r\n  },\r\n};\r\n\nimport { createElementVNode as _createElementVNode, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"/node_modules/.vite/deps/vue.js?v=d909f7f1\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-6c3dda26\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h2\", null, \"CALENDAR\", -1 /* HOISTED */))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_calendar = __unplugin_components_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createCommentVNode(\" <van-cell title=\\\"Select Single Date\\\" :value=\\\"date\\\" @click=\\\"show = true\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      show: $setup.show,\n      \"onUpdate:show\": _cache[0] || (_cache[0] = $event => (($setup.show) = $event)),\n      onConfirm: $setup.onConfirm\n    }, null, 8 /* PROPS */, [\"show\", \"onConfirm\"]),\n    _createCommentVNode(\" <van-calendar show color=\\\"#ee0a24\\\" /> \"),\n    _createVNode(_component_van_calendar, {\n      title: \"Calendar\",\n      poppable: false,\n      \"show-confirm\": false,\n      style: { height: '500px' }\n    })\n  ]))\n}\n\nimport \"/src/components/CalendarView.vue?vue&type=style&index=0&scoped=6c3dda26&lang.scss\"\n\n_sfc_main.__hmrId = \"6c3dda26\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from \"/@id/__x00__plugin-vue:export-helper\"\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-6c3dda26\"],['__file',\"D:/js/work/Vue js/check-everyday/src/components/CalendarView.vue\"]])",
+      "start": 1698611775996,
+      "end": 1698611776270,
+      "order": "normal",
+      "sourcemaps": null
     }
   ]
 }

@@ -2,17 +2,19 @@
   "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/vant/es/tab/index.css",
   "transforms": [
     {
-      "name": "vite:load-fallback",
+      "name": "__load__",
       "result": ".van-tab__panel,.van-tab__panel-wrapper{flex-shrink:0;box-sizing:border-box;width:100%}.van-tab__panel-wrapper--inactive{height:0;overflow:visible}\n",
-      "start": 1698392050241,
-      "end": 1698392050299,
-      "sourcemaps": null
+      "start": 1698611777714,
+      "end": 1698611777714,
+      "sourcemaps": {
+        "mappings": ""
+      }
     },
     {
       "name": "vite:css",
       "result": ".van-tab__panel,.van-tab__panel-wrapper{flex-shrink:0;box-sizing:border-box;width:100%}.van-tab__panel-wrapper--inactive{height:0;overflow:visible}\n",
-      "start": 1698392050299,
-      "end": 1698392050301,
+      "start": 1698611777714,
+      "end": 1698611777719,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -20,97 +22,87 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "result": "export default ''",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "result": "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/tab/index.css\"\nconst __vite__css = \".van-tab__panel,.van-tab__panel-wrapper{flex-shrink:0;box-sizing:border-box;width:100%}.van-tab__panel-wrapper--inactive{height:0;overflow:visible}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
       }
     },
     {
-      "name": "vite:build-html",
-      "start": 1698392050301,
-      "end": 1698392050301,
-      "order": "normal"
-    },
-    {
       "name": "vite:worker-import-meta-url",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1698392050301,
-      "end": 1698392050301,
-      "order": "normal"
-    },
-    {
-      "name": "commonjs",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "post"
     },
     {
-      "name": "vite:build-import-analysis",
-      "start": 1698392050301,
-      "end": 1698392050301,
+      "name": "vite:client-inject",
+      "start": 1698611777719,
+      "end": 1698611777719,
       "order": "normal"
     },
     {
-      "name": "vite:reporter",
-      "start": 1698392050301,
-      "end": 1698392050301,
-      "order": "normal"
+      "name": "vite:import-analysis",
+      "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/node_modules/vant/es/tab/index.css\");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/tab/index.css\"\nconst __vite__css = \".van-tab__panel,.van-tab__panel-wrapper{flex-shrink:0;box-sizing:border-box;width:100%}.van-tab__panel-wrapper--inactive{height:0;overflow:visible}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
+      "start": 1698611777719,
+      "end": 1698611777719,
+      "order": "normal",
+      "sourcemaps": null
     }
   ]
 }

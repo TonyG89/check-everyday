@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.5.0",
+    "currency-symbol-map": "^5.1.0",
     "dotenv": "^16.3.1",
     "sass": "^1.69.3",
     "vant": "^4.7.1",
     "vue": "^3.3.4",
-    "vue-circle-flags": "^1.0.8",
-    "vue-currency-symbol": "^1.0.2"
+    "vue-circle-flags": "^1.0.8"
   },
   "devDependencies": {
     "@vant/auto-import-resolver": "^1.0.1",

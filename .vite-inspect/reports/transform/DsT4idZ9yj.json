@@ -1,0 +1,97 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/src/data/urlData.js",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "export default {\r\n  binance: ['https://api.binance.com',\r\n    'https://api-gcp.binance.com',\r\n    'https://api1.binance.com',\r\n    'https://api2.binance.com',\r\n    'https://api3.binance.com',\r\n    'https://api4.binance.com']\r\n}",
+      "start": 1698611776042,
+      "end": 1698611776042
+    },
+    {
+      "name": "vite:css",
+      "start": 1698611776042,
+      "end": 1698611776042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698611776042,
+      "end": 1698611776042,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698611776042,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "post"
+    },
+    {
+      "name": "vite:client-inject",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "export default {\r\n  binance: ['https://api.binance.com',\r\n    'https://api-gcp.binance.com',\r\n    'https://api1.binance.com',\r\n    'https://api2.binance.com',\r\n    'https://api3.binance.com',\r\n    'https://api4.binance.com']\r\n}",
+      "start": 1698611776043,
+      "end": 1698611776043,
+      "order": "normal",
+      "sourcemaps": null
+    }
+  ]
+}

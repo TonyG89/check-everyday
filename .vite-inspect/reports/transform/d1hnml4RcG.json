@@ -1,0 +1,98 @@
+{
+  "resolvedId": "D:/js/work/Vue js/check-everyday/node_modules/.vite/deps/vant_es_config-provider_style_index.js?v=0c0cdd89",
+  "transforms": [
+    {
+      "name": "vite:optimized-deps",
+      "result": "// node_modules/vant/es/config-provider/style/index.mjs\nimport \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/style/base.css\";\n//# sourceMappingURL=vant_es_config-provider_style_index.js.map\n",
+      "start": 1698611776208,
+      "end": 1698611777461,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "unplugin-vue-components",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "post"
+    },
+    {
+      "name": "vite:client-inject",
+      "start": 1698611777461,
+      "end": 1698611777461,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "// node_modules/vant/es/config-provider/style/index.mjs\nimport \"/node_modules/vant/es/style/base.css\";\n//# sourceMappingURL=vant_es_config-provider_style_index.js.map\n",
+      "start": 1698611777461,
+      "end": 1698611777463,
+      "order": "normal",
+      "sourcemaps": null
+    }
+  ]
+}

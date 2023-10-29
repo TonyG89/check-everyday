@@ -1,24 +1,25 @@
 <template>
   <h2>NBU</h2>
   <div>
-    {{ mainDb }}
     <van-icon name="chat-o" />
-    <ul>
-      x
-      <li v-for="i in NBUCurrency" :key="i.currency">
-        <CircleFlags size="medium" :country="i.flag" />
-        {{ i.price }} {{ grn }} | {{ i.invertPrice }} {{ i.symbol }}
-      </li>
-      x
-    </ul>
+    <van-grid :column-num="4">
+      <van-grid-item v-for="i in NBUCurrency" :key="i.currency">
+        <CircleFlags size="small" :country="i.flag" />
+        {{ i.price }} {{ grn }}
+        <CircleFlags size="small" country="ua" />
+        {{ i.invertPrice }} {{ i.symbol }}
+      </van-grid-item>
+    </van-grid>
   </div>
 </template>
 
 <script setup>
 import { computed, onMounted, reactive, ref } from 'vue';
 import { useNow, useDateFormat } from '@vueuse/core';
+import getSymbolFromCurrency from 'currency-symbol-map';
+// import urlData from '@/data/urlData.js';
 
-const grn = () => currencySymbol('ukr');
+const grn = getSymbolFromCurrency('UAH');
 
 const now = useNow();
 const formatDate = useDateFormat(now, 'YYYYMMDD');
@@ -33,7 +34,7 @@ const NBUCurrency = computed(() => {
       currency: currency,
       price: Math.round(mainDb[currency] * 100) / 100,
       invertPrice: Math.round((1 / mainDb[currency]) * 100) / 100,
-      symbol: () => currencySymbol('usd'),
+      symbol: getSymbolFromCurrency(currency),
       flag: currency.toLowerCase().slice(0, 2),
     };
   });
