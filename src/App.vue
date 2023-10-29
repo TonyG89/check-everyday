@@ -1,14 +1,14 @@
 <template>
   <div class="wrapper">
     <div class="container">
-      div.
-      <h1 class="bg-red-900 mb-10">Hello! What do you want to check?</h1>
+      <CryptoCoinView />
+      <!-- <h1 class="bg-red-900 mb-10">Hello! What do you want to check?</h1> -->
       <van-button plain type="danger" loading-type="spinner" @click="loadData"
         ><h3 class="text-2xl">refresh all datas</h3></van-button
       >
       <WeatherView />
+      <TheUseFitches />
       <NBUView @loadData="loadData" />
-      <CryptoCoinView />
       <MyIpView />
     </div>
     <div>
@@ -23,6 +23,7 @@ import MyIpView from './components/MyIpView.vue';
 import CryptoCoinView from './components/CryptoCoinView.vue';
 import CalendarView from './components/CalendarView.vue';
 import NBUView from './components/NBUView.vue';
+import TheUseFitches from './components/TheUseFitches.vue';
 
 const env = import.meta.env;
 console.log(env);

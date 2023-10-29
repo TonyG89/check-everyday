@@ -4,8 +4,8 @@
     {
       "name": "__load__",
       "result": ".van-swipe-item{position:relative;flex-shrink:0;width:100%;height:100%}\n",
-      "start": 1698611777719,
-      "end": 1698611777719,
+      "start": 1698613017065,
+      "end": 1698613017065,
       "sourcemaps": {
         "mappings": ""
       }
@@ -13,8 +13,8 @@
     {
       "name": "vite:css",
       "result": ".van-swipe-item{position:relative;flex-shrink:0;width:100%;height:100%}\n",
-      "start": 1698611777719,
-      "end": 1698611777725,
+      "start": 1698613017065,
+      "end": 1698613017070,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -22,39 +22,39 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/swipe-item/index.css\"\nconst __vite__css = \".van-swipe-item{position:relative;flex-shrink:0;width:100%;height:100%}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,45 +62,45 @@
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "post"
     },
     {
       "name": "vite:client-inject",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal"
     },
     {
       "name": "vite:import-analysis",
       "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/node_modules/vant/es/swipe-item/index.css\");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/swipe-item/index.css\"\nconst __vite__css = \".van-swipe-item{position:relative;flex-shrink:0;width:100%;height:100%}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
-      "start": 1698611777725,
-      "end": 1698611777725,
+      "start": 1698613017070,
+      "end": 1698613017070,
       "order": "normal",
       "sourcemaps": null
     }

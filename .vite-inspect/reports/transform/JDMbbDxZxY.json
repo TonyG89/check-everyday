@@ -4,8 +4,8 @@
     {
       "name": "__load__",
       "result": ".circle-flags-small{height:32px;width:32px}.circle-flags-medium{height:62px;width:62px}.circle-flags-large{height:92px;width:92px}\n",
-      "start": 1698611776270,
-      "end": 1698611776270,
+      "start": 1698613016198,
+      "end": 1698613016198,
       "sourcemaps": {
         "mappings": ""
       }
@@ -13,8 +13,8 @@
     {
       "name": "vite:css",
       "result": ".circle-flags-small{height:32px;width:32px}.circle-flags-medium{height:62px;width:62px}.circle-flags-large{height:92px;width:92px}\n",
-      "start": 1698611776270,
-      "end": 1698611776279,
+      "start": 1698613016198,
+      "end": 1698613016717,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -22,39 +22,39 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016717,
+      "end": 1698613016717,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016717,
+      "end": 1698613016717,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016717,
+      "end": 1698613016717,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016718,
+      "end": 1698613016720,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016720,
+      "end": 1698613016720,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vue-circle-flags/dist/vue-circle-flags.css\"\nconst __vite__css = \".circle-flags-small{height:32px;width:32px}.circle-flags-medium{height:62px;width:62px}.circle-flags-large{height:92px;width:92px}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,45 +62,45 @@
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "post"
     },
     {
       "name": "vite:client-inject",
-      "start": 1698611776279,
-      "end": 1698611776279,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "normal"
     },
     {
       "name": "vite:import-analysis",
       "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/node_modules/vue-circle-flags/dist/vue-circle-flags.css\");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vue-circle-flags/dist/vue-circle-flags.css\"\nconst __vite__css = \".circle-flags-small{height:32px;width:32px}.circle-flags-medium{height:62px;width:62px}.circle-flags-large{height:92px;width:92px}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
-      "start": 1698611776279,
-      "end": 1698611776280,
+      "start": 1698613016721,
+      "end": 1698613016721,
       "order": "normal",
       "sourcemaps": null
     }

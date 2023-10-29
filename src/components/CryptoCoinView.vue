@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="card">
     <h2>crypto</h2>
     <div v-for="i in sortData" :key="i.symbol">
       {{ i?.symbol }}: {{ String(i?.openPrice).slice(0, String(i?.openPrice).indexOf('.') + 3) }} (<span

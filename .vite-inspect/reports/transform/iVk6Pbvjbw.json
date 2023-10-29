@@ -4,8 +4,8 @@
     {
       "name": "__load__",
       "result": ":root{--van-badge-size: 16px;--van-badge-color: var(--van-white);--van-badge-padding: 0 3px;--van-badge-font-size: var(--van-font-size-sm);--van-badge-font-weight: var(--van-font-bold);--van-badge-border-width: var(--van-border-width);--van-badge-background: var(--van-danger-color);--van-badge-dot-color: var(--van-danger-color);--van-badge-dot-size: 8px;--van-badge-font: -apple-system-font, helvetica neue, arial, sans-serif}.van-badge{display:inline-block;box-sizing:border-box;min-width:var(--van-badge-size);padding:var(--van-badge-padding);color:var(--van-badge-color);font-weight:var(--van-badge-font-weight);font-size:var(--van-badge-font-size);font-family:var(--van-badge-font);line-height:1.2;text-align:center;background:var(--van-badge-background);border:var(--van-badge-border-width) solid var(--van-background-2);border-radius:var(--van-radius-max)}.van-badge--fixed{position:absolute;transform-origin:100%}.van-badge--top-left{top:0;left:0;transform:translate(-50%,-50%)}.van-badge--top-right{top:0;right:0;transform:translate(50%,-50%)}.van-badge--bottom-left{bottom:0;left:0;transform:translate(-50%,50%)}.van-badge--bottom-right{bottom:0;right:0;transform:translate(50%,50%)}.van-badge--dot{width:var(--van-badge-dot-size);min-width:0;height:var(--van-badge-dot-size);background:var(--van-badge-dot-color);border-radius:100%;border:none;padding:0}.van-badge__wrapper{position:relative;display:inline-block}\n",
-      "start": 1698611777545,
-      "end": 1698611777545,
+      "start": 1698613016955,
+      "end": 1698613016955,
       "sourcemaps": {
         "mappings": ""
       }
@@ -13,8 +13,8 @@
     {
       "name": "vite:css",
       "result": ":root{--van-badge-size: 16px;--van-badge-color: var(--van-white);--van-badge-padding: 0 3px;--van-badge-font-size: var(--van-font-size-sm);--van-badge-font-weight: var(--van-font-bold);--van-badge-border-width: var(--van-border-width);--van-badge-background: var(--van-danger-color);--van-badge-dot-color: var(--van-danger-color);--van-badge-dot-size: 8px;--van-badge-font: -apple-system-font, helvetica neue, arial, sans-serif}.van-badge{display:inline-block;box-sizing:border-box;min-width:var(--van-badge-size);padding:var(--van-badge-padding);color:var(--van-badge-color);font-weight:var(--van-badge-font-weight);font-size:var(--van-badge-font-size);font-family:var(--van-badge-font);line-height:1.2;text-align:center;background:var(--van-badge-background);border:var(--van-badge-border-width) solid var(--van-background-2);border-radius:var(--van-radius-max)}.van-badge--fixed{position:absolute;transform-origin:100%}.van-badge--top-left{top:0;left:0;transform:translate(-50%,-50%)}.van-badge--top-right{top:0;right:0;transform:translate(50%,-50%)}.van-badge--bottom-left{bottom:0;left:0;transform:translate(-50%,50%)}.van-badge--bottom-right{bottom:0;right:0;transform:translate(50%,50%)}.van-badge--dot{width:var(--van-badge-dot-size);min-width:0;height:var(--van-badge-dot-size);background:var(--van-badge-dot-color);border-radius:100%;border:none;padding:0}.van-badge__wrapper{position:relative;display:inline-block}\n",
-      "start": 1698611777545,
-      "end": 1698611777552,
+      "start": 1698613016955,
+      "end": 1698613016960,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -22,39 +22,39 @@
     },
     {
       "name": "vite:esbuild",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
       "result": "import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/badge/index.css\"\nconst __vite__css = \":root{--van-badge-size: 16px;--van-badge-color: var(--van-white);--van-badge-padding: 0 3px;--van-badge-font-size: var(--van-font-size-sm);--van-badge-font-weight: var(--van-font-bold);--van-badge-border-width: var(--van-border-width);--van-badge-background: var(--van-danger-color);--van-badge-dot-color: var(--van-danger-color);--van-badge-dot-size: 8px;--van-badge-font: -apple-system-font, helvetica neue, arial, sans-serif}.van-badge{display:inline-block;box-sizing:border-box;min-width:var(--van-badge-size);padding:var(--van-badge-padding);color:var(--van-badge-color);font-weight:var(--van-badge-font-weight);font-size:var(--van-badge-font-size);font-family:var(--van-badge-font);line-height:1.2;text-align:center;background:var(--van-badge-background);border:var(--van-badge-border-width) solid var(--van-background-2);border-radius:var(--van-radius-max)}.van-badge--fixed{position:absolute;transform-origin:100%}.van-badge--top-left{top:0;left:0;transform:translate(-50%,-50%)}.van-badge--top-right{top:0;right:0;transform:translate(50%,-50%)}.van-badge--bottom-left{bottom:0;left:0;transform:translate(-50%,50%)}.van-badge--bottom-right{bottom:0;right:0;transform:translate(50%,50%)}.van-badge--dot{width:var(--van-badge-dot-size);min-width:0;height:var(--van-badge-dot-size);background:var(--van-badge-dot-color);border-radius:100%;border:none;padding:0}.van-badge__wrapper{position:relative;display:inline-block}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,45 +62,45 @@
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "unplugin-vue-components",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "post"
     },
     {
       "name": "vite:client-inject",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal"
     },
     {
       "name": "vite:import-analysis",
       "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/node_modules/vant/es/badge/index.css\");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from \"/@vite/client\"\nconst __vite__id = \"D:/js/work/Vue js/check-everyday/node_modules/vant/es/badge/index.css\"\nconst __vite__css = \":root{--van-badge-size: 16px;--van-badge-color: var(--van-white);--van-badge-padding: 0 3px;--van-badge-font-size: var(--van-font-size-sm);--van-badge-font-weight: var(--van-font-bold);--van-badge-border-width: var(--van-border-width);--van-badge-background: var(--van-danger-color);--van-badge-dot-color: var(--van-danger-color);--van-badge-dot-size: 8px;--van-badge-font: -apple-system-font, helvetica neue, arial, sans-serif}.van-badge{display:inline-block;box-sizing:border-box;min-width:var(--van-badge-size);padding:var(--van-badge-padding);color:var(--van-badge-color);font-weight:var(--van-badge-font-weight);font-size:var(--van-badge-font-size);font-family:var(--van-badge-font);line-height:1.2;text-align:center;background:var(--van-badge-background);border:var(--van-badge-border-width) solid var(--van-background-2);border-radius:var(--van-radius-max)}.van-badge--fixed{position:absolute;transform-origin:100%}.van-badge--top-left{top:0;left:0;transform:translate(-50%,-50%)}.van-badge--top-right{top:0;right:0;transform:translate(50%,-50%)}.van-badge--bottom-left{bottom:0;left:0;transform:translate(-50%,50%)}.van-badge--bottom-right{bottom:0;right:0;transform:translate(50%,50%)}.van-badge--dot{width:var(--van-badge-dot-size);min-width:0;height:var(--van-badge-dot-size);background:var(--van-badge-dot-color);border-radius:100%;border:none;padding:0}.van-badge__wrapper{position:relative;display:inline-block}\\n\"\n__vite__updateStyle(__vite__id, __vite__css)\nimport.meta.hot.accept()\nexport default __vite__css\nimport.meta.hot.prune(() => __vite__removeStyle(__vite__id))",
-      "start": 1698611777552,
-      "end": 1698611777552,
+      "start": 1698613016960,
+      "end": 1698613016960,
       "order": "normal",
       "sourcemaps": null
     }

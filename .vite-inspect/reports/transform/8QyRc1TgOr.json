@@ -4,38 +4,38 @@
     {
       "name": "__load__",
       "result": "<template>\r\n  <div>\r\n    <h2>WEATHER</h2>\r\n    <van-cell title=\"Location:\" :value=\"location[0]?.name\"  />\r\n    <van-cell title=\"Temperature:\" :value=\"temp?.main?.temp+'°C'\"  />\r\n    <van-cell title=\"Feeling:\" :value=\"temp?.main?.feels_like+'°C'\"  />\r\n    <van-cell title=\"Humidity:\" :value=\"temp?.main?.humidity+'%'\"  />\r\n    <!-- <h1>{{ location[0]?.name }}</h1> -->\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nimport { ref } from 'vue';\r\n\r\nconst apiKey = import.meta.env.VITE_APIKEY_OPENWEATHERMAP;\r\nconst lat = '50.49316397640854';\r\nconst lon = '30.598097093562785';\r\nconst limit = '5';\r\nconst city = 'Kyiv';\r\n\r\nconst location = ref(null);\r\nconst temp = ref(null);\r\n\r\nlocation.value = fetch(\r\n  `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=${limit}&appid=${apiKey}`\r\n)\r\n  .then((res) => res.json())\r\n  .then((data) => {\r\n    location.value = data;\r\n  });\r\n  \r\ntemp.value = fetch(\r\n  `${import.meta.env.VITE_WEATHER_URL_OPENWEATHERMAP}/weather?q=${city}&appid=${apiKey}&units=metric`\r\n).then((res) =>\r\n  res.json().then((data) => {\r\n    temp.value = data;\r\n  })\r\n);\r\n\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>\r\n",
-      "start": 1698611775980,
-      "end": 1698611775980
+      "start": 1698613016725,
+      "end": 1698613016725
     },
     {
       "name": "vite:css",
-      "start": 1698611775980,
-      "end": 1698611775980,
+      "start": 1698613016725,
+      "end": 1698613016725,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1698611775980,
-      "end": 1698611775980,
+      "start": 1698613016725,
+      "end": 1698613016725,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1698611775980,
-      "end": 1698611775980,
+      "start": 1698613016725,
+      "end": 1698613016725,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1698611775980,
-      "end": 1698611775980,
+      "start": 1698613016725,
+      "end": 1698613016726,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { ref } from 'vue';\r\n\r\nconst lat = '50.49316397640854';\r\nconst lon = '30.598097093562785';\r\nconst limit = '5';\r\nconst city = 'Kyiv';\r\n\r\n\nconst _sfc_main = {\n  __name: 'WeatherView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst apiKey = import.meta.env.VITE_APIKEY_OPENWEATHERMAP;\r\nconst location = ref(null);\r\nconst temp = ref(null);\r\n\r\nlocation.value = fetch(\r\n  `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=${limit}&appid=${apiKey}`\r\n)\r\n  .then((res) => res.json())\r\n  .then((data) => {\r\n    location.value = data;\r\n  });\r\n  \r\ntemp.value = fetch(\r\n  `${import.meta.env.VITE_WEATHER_URL_OPENWEATHERMAP}/weather?q=${city}&appid=${apiKey}&units=metric`\r\n).then((res) =>\r\n  res.json().then((data) => {\r\n    temp.value = data;\r\n  })\r\n);\r\n\r\n\nconst __returned__ = { apiKey, lat, lon, limit, city, location, temp, ref }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createCommentVNode as _createCommentVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"WEATHER\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_cell = _resolveComponent(\"van-cell\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createVNode(_component_van_cell, {\n      title: \"Location:\",\n      value: $setup.location[0]?.name\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Temperature:\",\n      value: $setup.temp?.main?.temp+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Feeling:\",\n      value: $setup.temp?.main?.feels_like+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Humidity:\",\n      value: $setup.temp?.main?.humidity+'%'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createCommentVNode(\" <h1>{{ location[0]?.name }}</h1> \")\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"ca4bffe1\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/WeatherView.vue\"]])",
-      "start": 1698611775980,
-      "end": 1698611775988,
+      "start": 1698613016726,
+      "end": 1698613016734,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -51,45 +51,45 @@
     },
     {
       "name": "vite:define",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "normal"
     },
     {
       "name": "unplugin-vue-components",
       "result": "/* unplugin-vue-components disabled */import { Cell as __unplugin_components_0 } from 'vant/es';import 'vant/es/cell/style/index';\nimport { ref } from 'vue';\r\n\r\nconst lat = '50.49316397640854';\r\nconst lon = '30.598097093562785';\r\nconst limit = '5';\r\nconst city = 'Kyiv';\r\n\r\n\nconst _sfc_main = {\n  __name: 'WeatherView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst apiKey = import.meta.env.VITE_APIKEY_OPENWEATHERMAP;\r\nconst location = ref(null);\r\nconst temp = ref(null);\r\n\r\nlocation.value = fetch(\r\n  `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=${limit}&appid=${apiKey}`\r\n)\r\n  .then((res) => res.json())\r\n  .then((data) => {\r\n    location.value = data;\r\n  });\r\n  \r\ntemp.value = fetch(\r\n  `${import.meta.env.VITE_WEATHER_URL_OPENWEATHERMAP}/weather?q=${city}&appid=${apiKey}&units=metric`\r\n).then((res) =>\r\n  res.json().then((data) => {\r\n    temp.value = data;\r\n  })\r\n);\r\n\r\n\nconst __returned__ = { apiKey, lat, lon, limit, city, location, temp, ref }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createCommentVNode as _createCommentVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"WEATHER\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_cell = __unplugin_components_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createVNode(_component_van_cell, {\n      title: \"Location:\",\n      value: $setup.location[0]?.name\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Temperature:\",\n      value: $setup.temp?.main?.temp+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Feeling:\",\n      value: $setup.temp?.main?.feels_like+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Humidity:\",\n      value: $setup.temp?.main?.humidity+'%'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createCommentVNode(\" <h1>{{ location[0]?.name }}</h1> \")\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"ca4bffe1\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/WeatherView.vue\"]])",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -105,15 +105,15 @@
     },
     {
       "name": "vite:client-inject",
-      "start": 1698611775988,
-      "end": 1698611775988,
+      "start": 1698613016734,
+      "end": 1698613016734,
       "order": "normal"
     },
     {
       "name": "vite:import-analysis",
-      "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/src/components/WeatherView.vue\");import.meta.env = {\"VITE_IP_URI\":\"https://api.ipify.org?format=json\",\"VITE_IP_PLACE_URL\":\"https://ipapi.co\",\"VITE_WEATHER_URL_OPENWEATHERMAP\":\"https://api.openweathermap.org/data/2.5\",\"VITE_APIKEY_OPENWEATHERMAP\":\"f73bc67235f0285b701bf759d9c75fdf\",\"VITE_NBU_URL\":\"https://bank.gov.ua/NBUStatService/v1/statdirectory\",\"BASE_URL\":\"/\",\"MODE\":\"development\",\"DEV\":true,\"PROD\":false,\"SSR\":false};/* unplugin-vue-components disabled */import { Cell as __unplugin_components_0 } from \"/node_modules/.vite/deps/vant_es.js?v=67e47849\";import \"/node_modules/.vite/deps/vant_es_cell_style_index.js?v=8d00e0cd\";\nimport { ref } from \"/node_modules/.vite/deps/vue.js?v=d909f7f1\";\r\n\r\nconst lat = '50.49316397640854';\r\nconst lon = '30.598097093562785';\r\nconst limit = '5';\r\nconst city = 'Kyiv';\r\n\r\n\nconst _sfc_main = {\n  __name: 'WeatherView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst apiKey = import.meta.env.VITE_APIKEY_OPENWEATHERMAP;\r\nconst location = ref(null);\r\nconst temp = ref(null);\r\n\r\nlocation.value = fetch(\r\n  `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=${limit}&appid=${apiKey}`\r\n)\r\n  .then((res) => res.json())\r\n  .then((data) => {\r\n    location.value = data;\r\n  });\r\n  \r\ntemp.value = fetch(\r\n  `${import.meta.env.VITE_WEATHER_URL_OPENWEATHERMAP}/weather?q=${city}&appid=${apiKey}&units=metric`\r\n).then((res) =>\r\n  res.json().then((data) => {\r\n    temp.value = data;\r\n  })\r\n);\r\n\r\n\nconst __returned__ = { apiKey, lat, lon, limit, city, location, temp, ref }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createCommentVNode as _createCommentVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"/node_modules/.vite/deps/vue.js?v=d909f7f1\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"WEATHER\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_cell = __unplugin_components_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createVNode(_component_van_cell, {\n      title: \"Location:\",\n      value: $setup.location[0]?.name\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Temperature:\",\n      value: $setup.temp?.main?.temp+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Feeling:\",\n      value: $setup.temp?.main?.feels_like+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Humidity:\",\n      value: $setup.temp?.main?.humidity+'%'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createCommentVNode(\" <h1>{{ location[0]?.name }}</h1> \")\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"ca4bffe1\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from \"/@id/__x00__plugin-vue:export-helper\"\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/WeatherView.vue\"]])",
-      "start": 1698611775988,
-      "end": 1698611776244,
+      "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/src/components/WeatherView.vue\");import.meta.env = {\"VITE_IP_URI\":\"https://api.ipify.org?format=json\",\"VITE_IP_PLACE_URL\":\"https://ipapi.co\",\"VITE_WEATHER_URL_OPENWEATHERMAP\":\"https://api.openweathermap.org/data/2.5\",\"VITE_APIKEY_OPENWEATHERMAP\":\"f73bc67235f0285b701bf759d9c75fdf\",\"VITE_NBU_URL\":\"https://bank.gov.ua/NBUStatService/v1/statdirectory\",\"BASE_URL\":\"/\",\"MODE\":\"development\",\"DEV\":true,\"PROD\":false,\"SSR\":false};/* unplugin-vue-components disabled */import { Cell as __unplugin_components_0 } from \"/node_modules/.vite/deps/vant_es.js?v=770c6037\";import \"/node_modules/.vite/deps/vant_es_cell_style_index.js?v=770c6037\";\nimport { ref } from \"/node_modules/.vite/deps/vue.js?v=770c6037\";\r\n\r\nconst lat = '50.49316397640854';\r\nconst lon = '30.598097093562785';\r\nconst limit = '5';\r\nconst city = 'Kyiv';\r\n\r\n\nconst _sfc_main = {\n  __name: 'WeatherView',\n  setup(__props, { expose: __expose }) {\n  __expose();\n\r\nconst apiKey = import.meta.env.VITE_APIKEY_OPENWEATHERMAP;\r\nconst location = ref(null);\r\nconst temp = ref(null);\r\n\r\nlocation.value = fetch(\r\n  `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=${limit}&appid=${apiKey}`\r\n)\r\n  .then((res) => res.json())\r\n  .then((data) => {\r\n    location.value = data;\r\n  });\r\n  \r\ntemp.value = fetch(\r\n  `${import.meta.env.VITE_WEATHER_URL_OPENWEATHERMAP}/weather?q=${city}&appid=${apiKey}&units=metric`\r\n).then((res) =>\r\n  res.json().then((data) => {\r\n    temp.value = data;\r\n  })\r\n);\r\n\r\n\nconst __returned__ = { apiKey, lat, lon, limit, city, location, temp, ref }\nObject.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })\nreturn __returned__\n}\n\n}\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createCommentVNode as _createCommentVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"/node_modules/.vite/deps/vue.js?v=770c6037\"\n\nconst _hoisted_1 = /*#__PURE__*/_createElementVNode(\"h2\", null, \"WEATHER\", -1 /* HOISTED */)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_van_cell = __unplugin_components_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _hoisted_1,\n    _createVNode(_component_van_cell, {\n      title: \"Location:\",\n      value: $setup.location[0]?.name\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Temperature:\",\n      value: $setup.temp?.main?.temp+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Feeling:\",\n      value: $setup.temp?.main?.feels_like+'°C'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createVNode(_component_van_cell, {\n      title: \"Humidity:\",\n      value: $setup.temp?.main?.humidity+'%'\n    }, null, 8 /* PROPS */, [\"value\"]),\n    _createCommentVNode(\" <h1>{{ location[0]?.name }}</h1> \")\n  ]))\n}\n\n\n_sfc_main.__hmrId = \"ca4bffe1\"\ntypeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)\nimport.meta.hot.accept(mod => {\n  if (!mod) return\n  const { default: updated, _rerender_only } = mod\n  if (_rerender_only) {\n    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)\n  } else {\n    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)\n  }\n})\nimport _export_sfc from \"/@id/__x00__plugin-vue:export-helper\"\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\"D:/js/work/Vue js/check-everyday/src/components/WeatherView.vue\"]])",
+      "start": 1698613016734,
+      "end": 1698613016735,
       "order": "normal",
       "sourcemaps": null
     }
